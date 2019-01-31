@@ -22,8 +22,82 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Julia Wang —— Portfolio</title>
   </head>
+  <style>
+    /* practice points:
+      1. make adorable custom cursor through tracing mouse position.
+      2. -webkit-text-stroke
+      3. change ::selection style
+    */
+
+    ::selection {
+      color: #ffca31;
+      background-color: transparent;
+    }
+
+    html, a:active, a:hover {
+      cursor: none;
+    }
+
+    html, body {
+      height: 100%;
+      background-color: #3a5d2f;
+    }
+
+    a {
+      transition: all 0.24s ease-in;
+      -webkit-text-stroke: 1px #ffffff;
+      font-size: 7vw;
+      color: transparent;
+    }
+
+    a:hover {
+      color: #ffffff;
+    }
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #cursor-halo {
+      width: 3em;
+      height: 3em;
+      position: absolute;
+      border-radius: 50%;
+      background-color: #fdecac70;
+      margin-top: -.75em;
+      margin-left: -.75em;
+      pointer-events: none;
+      z-index: 10000;
+      transition: transform 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33);
+    }
+
+    .cursor-halo-active {
+      transform: scale(1.5);
+    }
+
+    #cursor-moon {
+      width: 1.5em;
+      height: 1.5em;
+      position: absolute;
+      border-radius: 50%;
+      background-color: #ffca31;
+      pointer-events: none;
+      z-index: 10000;
+      transition: opacity 0.5s ease-in, transform 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33);
+    }
+
+    .cursor-moon-active {
+      opacity: 0;
+      transform: scale(0);
+    }
+  </style>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
@@ -37,5 +111,35 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <div id="cursor-moon"></div>
+    <div id="cursor-halo"></div>
   </body>
+  <script>
+    const moon = document.getElementById("cursor-moon");
+    const halo = document.getElementById("cursor-halo");
+
+    window.onmousemove = (event) => {
+      moon.style.top = event.clientY + "px";
+      moon.style.left = event.clientX + "px";
+
+      setTimeout(() => {
+        halo.style.top = event.clientY + "px";
+        halo.style.left = event.clientX + "px";
+      }, 100);
+    }
+
+    const clickableDomList = document.querySelectorAll("a");
+
+    clickableDomList.forEach((clickableItem, index) => {
+      clickableItem.addEventListener("mouseenter", function (e) {
+        halo.classList.add("cursor-halo-active");
+        moon.classList.add("cursor-moon-active");
+      });
+
+      clickableItem.addEventListener("mouseout", function (e) {
+        halo.classList.remove("cursor-halo-active");
+        moon.classList.remove("cursor-moon-active");
+      });
+    });
+  </script>
 </html>
