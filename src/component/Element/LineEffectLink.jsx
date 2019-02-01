@@ -26,7 +26,7 @@ type Props = {
 };
 
 function LineEffectLink({
-  url,
+  href,
   children,
   isNavLink,
   to,
@@ -38,7 +38,7 @@ function LineEffectLink({
           {children}
         </NavLink>
       ) : (
-        <a style={styles.a} className="line-effect" href={url} target="blank">
+        <a style={styles.a} className="line-effect" href={href} target="blank">
           {children}
         </a>
       )}

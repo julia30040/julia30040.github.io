@@ -4,6 +4,7 @@ import radium from 'radium';
 import PageTitle from '../../component/Element/PageTitle.jsx';
 import Avatar from '../../component/About/Avatar.jsx';
 import Info from '../../component/About/Info.jsx';
+import MonsteraDeliciousa from '../../component/Element/MonsteraDeliciousa.jsx';
 
 const styles = {
   wrapper: {
@@ -36,6 +37,7 @@ class AboutPage extends PureComponent {
             <Info />
           </div>
         </div>
+        <MonsteraDeliciousa />
       </div>
     );
   }

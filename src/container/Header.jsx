@@ -1,6 +1,5 @@
 // @flow
 import React, { PureComponent } from 'react';
-import { NavLink } from 'react-router-dom';
 import LineEffectLink from '../component/Element/LineEffectLink.jsx';
 
 const styles = {
