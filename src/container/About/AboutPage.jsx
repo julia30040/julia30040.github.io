@@ -15,7 +15,7 @@ const styles = {
     justifyContent: 'center',
   },
   mainContainer: {
-    maxWidth: 837,
+    maxWidth: 800,
     padding: '48px 32px',
   },
   row: {
