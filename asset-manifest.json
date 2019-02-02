@@ -1,14 +1,14 @@
 {
-  "main.css": "/portfolio/static/css/main.7c6ceebe.chunk.css",
-  "main.js": "/portfolio/static/js/main.e6621e7c.chunk.js",
-  "main.js.map": "/portfolio/static/js/main.e6621e7c.chunk.js.map",
-  "static/js/1.da1c356e.chunk.js": "/portfolio/static/js/1.da1c356e.chunk.js",
-  "static/js/1.da1c356e.chunk.js.map": "/portfolio/static/js/1.da1c356e.chunk.js.map",
-  "runtime~main.js": "/portfolio/static/js/runtime~main.ee2a1003.js",
-  "runtime~main.js.map": "/portfolio/static/js/runtime~main.ee2a1003.js.map",
-  "static/media/avatar.png": "/portfolio/static/media/avatar.0f99d232.png",
-  "static/css/main.7c6ceebe.chunk.css.map": "/portfolio/static/css/main.7c6ceebe.chunk.css.map",
-  "index.html": "/portfolio/index.html",
-  "precache-manifest.d83e39c6e7d300ca81a77f196f3bf865.js": "/portfolio/precache-manifest.d83e39c6e7d300ca81a77f196f3bf865.js",
-  "service-worker.js": "/portfolio/service-worker.js"
+  "main.css": "/julia30040.github.io/static/css/main.7c6ceebe.chunk.css",
+  "main.js": "/julia30040.github.io/static/js/main.e443de7e.chunk.js",
+  "main.js.map": "/julia30040.github.io/static/js/main.e443de7e.chunk.js.map",
+  "static/js/1.da1c356e.chunk.js": "/julia30040.github.io/static/js/1.da1c356e.chunk.js",
+  "static/js/1.da1c356e.chunk.js.map": "/julia30040.github.io/static/js/1.da1c356e.chunk.js.map",
+  "runtime~main.js": "/julia30040.github.io/static/js/runtime~main.3c4a7c1b.js",
+  "runtime~main.js.map": "/julia30040.github.io/static/js/runtime~main.3c4a7c1b.js.map",
+  "static/media/avatar.png": "/julia30040.github.io/static/media/avatar.0f99d232.png",
+  "static/css/main.7c6ceebe.chunk.css.map": "/julia30040.github.io/static/css/main.7c6ceebe.chunk.css.map",
+  "index.html": "/julia30040.github.io/index.html",
+  "precache-manifest.f3c480e5a946706224394581f9e0ce1e.js": "/julia30040.github.io/precache-manifest.f3c480e5a946706224394581f9e0ce1e.js",
+  "service-worker.js": "/julia30040.github.io/service-worker.js"
 }
