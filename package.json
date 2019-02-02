@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -42,5 +42,5 @@
   "bugs": {
     "url": "https://github.com/julia30040/julia30040.github.io/issues"
   },
-  "homepage": "https://julia30040.github.io/portfolio"
+  "homepage": "https://julia30040.github.io/julia30040.github.io"
 }
