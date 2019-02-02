@@ -1,14 +1,14 @@
 {
-  "main.css": "/julia30040/julia30040.github.io/static/css/main.7c6ceebe.chunk.css",
-  "main.js": "/julia30040/julia30040.github.io/static/js/main.fcb0fb3b.chunk.js",
-  "main.js.map": "/julia30040/julia30040.github.io/static/js/main.fcb0fb3b.chunk.js.map",
-  "static/js/1.da1c356e.chunk.js": "/julia30040/julia30040.github.io/static/js/1.da1c356e.chunk.js",
-  "static/js/1.da1c356e.chunk.js.map": "/julia30040/julia30040.github.io/static/js/1.da1c356e.chunk.js.map",
-  "runtime~main.js": "/julia30040/julia30040.github.io/static/js/runtime~main.4ef009e5.js",
-  "runtime~main.js.map": "/julia30040/julia30040.github.io/static/js/runtime~main.4ef009e5.js.map",
-  "static/media/avatar.png": "/julia30040/julia30040.github.io/static/media/avatar.0f99d232.png",
-  "static/css/main.7c6ceebe.chunk.css.map": "/julia30040/julia30040.github.io/static/css/main.7c6ceebe.chunk.css.map",
-  "index.html": "/julia30040/julia30040.github.io/index.html",
-  "precache-manifest.01d1df949a0e09a79adc194cae40dace.js": "/julia30040/julia30040.github.io/precache-manifest.01d1df949a0e09a79adc194cae40dace.js",
-  "service-worker.js": "/julia30040/julia30040.github.io/service-worker.js"
+  "main.css": "/portfolio/static/css/main.7c6ceebe.chunk.css",
+  "main.js": "/portfolio/static/js/main.11559639.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.11559639.chunk.js.map",
+  "static/js/1.da1c356e.chunk.js": "/portfolio/static/js/1.da1c356e.chunk.js",
+  "static/js/1.da1c356e.chunk.js.map": "/portfolio/static/js/1.da1c356e.chunk.js.map",
+  "runtime~main.js": "/portfolio/static/js/runtime~main.ee2a1003.js",
+  "runtime~main.js.map": "/portfolio/static/js/runtime~main.ee2a1003.js.map",
+  "static/media/avatar.png": "/portfolio/static/media/avatar.0f99d232.png",
+  "static/css/main.7c6ceebe.chunk.css.map": "/portfolio/static/css/main.7c6ceebe.chunk.css.map",
+  "index.html": "/portfolio/index.html",
+  "precache-manifest.ae0fb5e4c74bdb5b5df87cd10597d7e6.js": "/portfolio/precache-manifest.ae0fb5e4c74bdb5b5df87cd10597d7e6.js",
+  "service-worker.js": "/portfolio/service-worker.js"
 }
