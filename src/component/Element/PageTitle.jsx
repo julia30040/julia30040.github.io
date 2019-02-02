@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import radium from 'radium';
+import { revealLeft as revealLeftAnimation } from '../../styles/reveal.js';
 
 type Props = {
   children: string,
@@ -9,6 +10,7 @@ type Props = {
 
 const styles = {
   title: {
+    ...revealLeftAnimation,
     transition: 'all 0.24s ease-in',
     WebkitTextStroke: '1px #ffffff',
     fontSize: 176,

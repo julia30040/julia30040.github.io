@@ -5,6 +5,7 @@ import PageTitle from '../../component/Element/PageTitle.jsx';
 import Avatar from '../../component/About/Avatar.jsx';
 import Info from '../../component/About/Info.jsx';
 import MonsteraDeliciousa from '../../component/Element/MonsteraDeliciousa.jsx';
+import { revealUp as revealUpAnimation } from '../../styles/reveal.js';
 
 const styles = {
   wrapper: {
@@ -32,7 +33,10 @@ class AboutPage extends PureComponent {
       <div style={styles.wrapper}>
         <div style={styles.mainContainer}>
           <PageTitle>About</PageTitle>
-          <div style={styles.row}>
+          <div style={[
+              styles.row,
+              revealUpAnimation,
+            ]}>
             <Avatar />
             <Info />
           </div>

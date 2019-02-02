@@ -5,6 +5,7 @@
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^3.1.2",
+    "gh-pages": "^2.0.1",
     "radium": "^0.25.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
@@ -15,6 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -39,5 +42,5 @@
   "bugs": {
     "url": "https://github.com/julia30040/julia30040.github.io/issues"
   },
-  "homepage": "https://github.com/julia30040/julia30040.github.io#readme"
+  "homepage": "https://julia30040.github.io/portfolio"
 }

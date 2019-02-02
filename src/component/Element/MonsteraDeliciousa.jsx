@@ -9,7 +9,7 @@ const waveKeyframes = radium.keyframes({
   },
   '100%': {
     opacity: 1,
-    transform: 'rotate3d(0, 0, 1, 0) transitionY(0)',
+    transform: 'rotate3d(0, 0, 1, 0) translateY(0)',
   },
 }, 'wave');
 
