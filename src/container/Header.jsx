@@ -1,5 +1,5 @@
 // @flow
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import LineEffectLink from '../component/Element/LineEffectLink.jsx';
 
 const styles = {
@@ -11,10 +11,11 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
+    zIndex: 5,
   },
 };
 
-class Header extends PureComponent {
+class Header extends Component {
   render() {
     return (
       <div style={styles.wrapper}>

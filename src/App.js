@@ -14,12 +14,14 @@ const styles = {
 class App extends Component {
   render() {
     return (
-      <Router>
-        <StyleRoot style={styles.root}>
-          <Header />
-          <MainBoard />
-        </StyleRoot>
-      </Router>
+      <StyleRoot>
+        <Router>
+          <div style={styles.root}>
+            <Header />
+            <MainBoard />
+          </div>
+        </Router>
+      </StyleRoot>
     );
   }
 }

@@ -18,7 +18,7 @@ const styles = {
     justifyContent: 'flex-start',
   },
   h2: {
-    color: '#3f3d3a',
+    color: '#292723',
   },
 };
 

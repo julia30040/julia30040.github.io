@@ -1,15 +1,16 @@
 // @flow
-import React, { PureComponent } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
 import HomePage from './Home/HomePage.jsx';
 import AboutPage from './About/AboutPage.jsx';
 
-class MainBoard extends PureComponent {
+class MainBoard extends Component {
   render() {
     return (
-      <Router>
-        <Route exact path="/about" component={AboutPage} />
-      </Router>
+      <Switch>
+        <Route exact path="/about/" component={AboutPage} />
+        <Route exact path="/projects/" component={HomePage} />
+      </Switch>
     );
   }
 }
