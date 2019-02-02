@@ -2,6 +2,17 @@
 import React, { PureComponent } from 'react';
 import radium from 'radium';
 
+const waveKeyframes = radium.keyframes({
+  '0%': {
+    opacity: 0,
+    transform: 'rotate3d(0, 0, -1, 10deg) translateY(10px)',
+  },
+  '100%': {
+    opacity: 1,
+    transform: 'rotate3d(0, 0, 1, 0) transitionY(0)',
+  },
+}, 'wave');
+
 const styles = {
   wrapper: {
     position: 'fixed',
@@ -11,6 +22,13 @@ const styles = {
     maxHeight: 479,
     width: '100%',
     height: '100%',
+    webkitTransformOrigin: '50% 100%',
+    animation: 'transform 1.8s cubic-bezier(0.75, -1.27, 0.3, 2.33)',
+    animationName: waveKeyframes,
+    transition: 'transform 1.8s cubic-bezier(0.75, -1.27, 0.3, 2.33)',
+    ':hover': {
+      transform: 'rotate3d(0, 0, -1, 10deg) translateY(10px)',
+    },
   },
 };
 
@@ -28,7 +46,9 @@ const stringifiedSvg = `
 class Avatar extends PureComponent {
   render() {
     return (
-      <div style={styles.wrapper} dangerouslySetInnerHTML={{__html: stringifiedSvg}}/>
+      <div
+        style={styles.wrapper}
+        dangerouslySetInnerHTML={{__html: stringifiedSvg}}/>
     );
   }
 }
