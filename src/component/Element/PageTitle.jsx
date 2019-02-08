@@ -12,8 +12,8 @@ const styles = {
   title: {
     ...revealLeftAnimation,
     transition: 'all 0.24s ease-in',
-    WebkitTextStroke: '1px #ffffff',
-    fontSize: 176,
+    WebkitTextStroke: '1px rgba(255, 255, 255, 0.9)',
+    fontSize: 132,
     margin: 0,
     ':hover': {
       color: '#ffffff',

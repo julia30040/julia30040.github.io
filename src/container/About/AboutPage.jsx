@@ -5,20 +5,24 @@ import PageTitle from '../../component/Element/PageTitle.jsx';
 import Avatar from '../../component/About/Avatar.jsx';
 import Info from '../../component/About/Info.jsx';
 import MonsteraDeliciousa from '../../component/Element/MonsteraDeliciousa.jsx';
+import MovingBackground from '../../component/Element/MovingBackground.jsx';
 import { revealUp as revealUpAnimation } from '../../styles/reveal.js';
+import seaImage from '../../img/sea_2.JPG';
 
 const styles = {
   wrapper: {
     width: '100%',
     height: '100%',
-    background: 'linear-gradient(#8f755e 95%, rgb(143, 117, 94) 95%)',
     display: 'flex',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     justifyContent: 'center',
   },
   mainContainer: {
     maxWidth: 800,
-    padding: '48px 32px',
+    position: 'relative',
+    top: -48,
+    padding: 32,
+    zIndex: 0,
   },
   row: {
     display: 'flex',
@@ -31,6 +35,7 @@ class AboutPage extends PureComponent {
   render() {
     return (
       <div style={styles.wrapper}>
+        <MovingBackground url={seaImage} />
         <div style={styles.mainContainer}>
           <PageTitle>About</PageTitle>
           <div style={[

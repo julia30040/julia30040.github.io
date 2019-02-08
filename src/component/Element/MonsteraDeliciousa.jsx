@@ -22,7 +22,7 @@ const styles = {
     maxHeight: 479,
     width: '100%',
     height: '100%',
-    webkitTransformOrigin: '50% 100%',
+    WebkitTransformOrigin: '50% 100%',
     animation: 'transform 1.8s cubic-bezier(0.75, -1.27, 0.3, 2.33)',
     animationName: waveKeyframes,
     transition: 'transform 1.8s cubic-bezier(0.75, -1.27, 0.3, 2.33)',
