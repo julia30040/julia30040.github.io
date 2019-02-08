@@ -3,6 +3,7 @@
 import React from 'react';
 import radium from 'radium';
 import { NavLink } from 'react-router-dom';
+import MouseEventHook from './MouseEventHook.jsx';
 
 const styles = {
   wrapper: {
@@ -32,17 +33,19 @@ function LineEffectLink({
   to,
 }: Props) {
   return (
-    <span style={styles.wrapper}>
-      {isNavLink ? (
-        <NavLink className="line-effect" to={to}>
-          {children}
-        </NavLink>
-      ) : (
-        <a style={styles.a} className="line-effect" href={href} target="blank">
-          {children}
-        </a>
-      )}
-    </span>
+    <MouseEventHook>
+      <span style={styles.wrapper}>
+        {isNavLink ? (
+          <NavLink className="line-effect" to={to}>
+            {children}
+          </NavLink>
+        ) : (
+          <a style={styles.a} className="line-effect" href={href} target="blank">
+            {children}
+          </a>
+        )}
+      </span>
+    </MouseEventHook>
   );
 }
 

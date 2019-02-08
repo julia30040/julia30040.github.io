@@ -123,19 +123,5 @@
         halo.style.left = event.clientX + "px";
       }, 100);
     }
-
-    const clickableDomList = document.querySelectorAll("a");
-
-    clickableDomList.forEach((clickableItem, index) => {
-      clickableItem.addEventListener("mouseenter", function (e) {
-        halo.classList.add("cursor-halo-active");
-        moon.classList.add("cursor-moon-active");
-      });
-
-      clickableItem.addEventListener("mouseout", function (e) {
-        halo.classList.remove("cursor-halo-active");
-        moon.classList.remove("cursor-moon-active");
-      });
-    });
   </script>
 </html>

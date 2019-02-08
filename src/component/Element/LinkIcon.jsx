@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import radium from 'radium';
+import MouseEventHook from './MouseEventHook.jsx';
 
 const styles = {
   wrapper: {
@@ -30,9 +31,11 @@ function LinkIcon ({
 }:Props) {
   return (
     <div style={styles.wrapper}>
-      <a style={styles.relatedLink} href={url} target="blank">
-        <i className={iconClass}></i>
-      </a>
+      <MouseEventHook>
+        <a style={styles.relatedLink} href={url} target="blank">
+          <i className={iconClass}></i>
+        </a>
+      </MouseEventHook>
     </div>
   );
 }
