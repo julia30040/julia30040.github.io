@@ -4,12 +4,13 @@ import radium from 'radium';
 
 type Props = {
   children: {},
+  isWrapText?: boolean,
 };
 
 class MouseEventHook extends PureComponent<Props> {
   componentDidMount() {
     this.link.addEventListener('mouseenter', (e) => this.onMouseEnter(e));
-    this.link.addEventListener('mouseout', (e) => this.onMouseOut(e));
+    this.link.addEventListener('mouseleave', (e) => this.onMouseLeave(e));
 
     this.cursorMoon = document.getElementById("cursor-moon");
     this.cursorHalo = document.getElementById("cursor-halo");
@@ -23,22 +24,35 @@ class MouseEventHook extends PureComponent<Props> {
   onMouseEnter(e) {
     this.cursorHalo.classList.add("cursor-halo-active");
     this.cursorMoon.classList.add("cursor-moon-active");
+    console.log('enter');
   }
 
-  onMouseOut(e) {
+  onMouseLeave(e) {
     this.cursorHalo.classList.remove("cursor-halo-active");
     this.cursorMoon.classList.remove("cursor-moon-active");
+    console.log('out');
   }
 
   render() {
-    const { children } = this.props;
+    const {
+      children,
+      isWrapText,
+    } = this.props;
 
-    return (
+    return isWrapText ? (
       <span ref={ref => { this.link = ref; }}>
-      {children}
+        {children}
       </span>
+    ) : (
+      <div ref={ref => { this.link = ref; }}>
+        {children}
+      </div>
     );
   }
 }
+
+MouseEventHook.defaultProps = {
+  isWrapText: true,
+};
 
 export default radium(MouseEventHook);
