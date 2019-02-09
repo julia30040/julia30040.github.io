@@ -5,9 +5,7 @@ import PageTitle from '../../component/Element/PageTitle.jsx';
 import Avatar from '../../component/About/Avatar.jsx';
 import Info from '../../component/About/Info.jsx';
 import MonsteraDeliciousa from '../../component/Element/MonsteraDeliciousa.jsx';
-import MovingBackground from '../../component/Element/MovingBackground.jsx';
 import { revealUp as revealUpAnimation } from '../../styles/reveal.js';
-import seaImage from '../../img/sea_2.JPG';
 
 const styles = {
   wrapper: {
@@ -35,7 +33,6 @@ class AboutPage extends PureComponent {
   render() {
     return (
       <div style={styles.wrapper}>
-        <MovingBackground url={seaImage} />
         <div style={styles.mainContainer}>
           <PageTitle>About</PageTitle>
           <div style={[

@@ -3,6 +3,8 @@ import radium, { StyleRoot } from 'radium';
 import { BrowserRouter as Router } from "react-router-dom";
 import Header from './container/Header.jsx';
 import MainBoard from './container/MainBoard.jsx';
+import MovingBackground from './component/Element/MovingBackground.jsx';
+import seaImage from './img/sea_2.JPG';
 
 const styles = {
   root: {
@@ -17,6 +19,7 @@ class App extends Component {
       <StyleRoot>
         <Router>
           <div style={styles.root}>
+            <MovingBackground url={seaImage} />
             <Header />
             <MainBoard />
           </div>

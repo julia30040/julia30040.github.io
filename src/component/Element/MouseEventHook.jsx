@@ -23,13 +23,11 @@ class MouseEventHook extends PureComponent<Props> {
   onMouseEnter(e) {
     this.cursorHalo.classList.add("cursor-halo-active");
     this.cursorMoon.classList.add("cursor-moon-active");
-    console.log('enter');
   }
 
   onMouseOut(e) {
     this.cursorHalo.classList.remove("cursor-halo-active");
     this.cursorMoon.classList.remove("cursor-moon-active");
-    console.log('out');
   }
 
   render() {
