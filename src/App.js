@@ -9,7 +9,6 @@ import seaImage from './img/sea_2.JPG';
 const styles = {
   root: {
     height: '100vh',
-    minHeight: 728,
   },
 };
 

@@ -10,6 +10,10 @@ const styles = {
     backgroundSize: 'cover',
     borderRadius: '50%',
     flexShrink: 0,
+    '@media screen and (max-width: 767px)': {
+      width: 200,
+      height: 200,
+    },
   },
 };
 

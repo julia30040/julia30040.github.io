@@ -7,6 +7,9 @@ import LineEffectLink from '../Element/LineEffectLink.jsx';
 const styles = {
   wrapper: {
     padding: '16px 0 0 48px',
+    '@media screen and (max-width: 767px)': {
+      padding: 16,
+    },
   },
   description: {
     color: '#fff',

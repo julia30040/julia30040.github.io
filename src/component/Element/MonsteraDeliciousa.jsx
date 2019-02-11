@@ -16,16 +16,20 @@ const waveKeyframes = radium.keyframes({
 const styles = {
   wrapper: {
     position: 'fixed',
-    left: '-20px',
+    right: '70%',
     bottom: '-20px',
     maxWidth: 405,
     maxHeight: 479,
     width: '100%',
     height: '100%',
+    padding: '0 80px 0 0',
     WebkitTransformOrigin: '50% 100%',
     animation: 'transform 1.8s cubic-bezier(0.75, -1.27, 0.3, 2.33)',
     animationName: waveKeyframes,
     transition: 'transform 1.8s cubic-bezier(0.75, -1.27, 0.3, 2.33)',
+    '@media screen and (max-width: 767px)': {
+      display: 'none',
+    },
     ':hover': {
       transform: 'rotate3d(0, 0, -1, 10deg) translateY(10px)',
     },

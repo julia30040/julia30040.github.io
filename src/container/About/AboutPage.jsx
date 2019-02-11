@@ -14,6 +14,10 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    '@media screen and (max-width: 767px)': {
+      alignItems: 'flex-start',
+      overflowY: 'scroll',
+    },
   },
   mainContainer: {
     maxWidth: 800,
@@ -21,11 +25,23 @@ const styles = {
     top: -48,
     padding: 32,
     zIndex: 0,
+    '@media screen and (max-width: 767px)': {
+      top: 0,
+      height: '100%',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'flex-start',
+    },
   },
   row: {
     display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
+    '@media screen and (max-width: 767px)': {
+      flexDirection: 'column',
+      alignItems: 'center',
+    },
   },
 };
 
