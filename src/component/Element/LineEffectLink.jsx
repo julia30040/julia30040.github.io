@@ -36,11 +36,18 @@ function LineEffectLink({
     <MouseEventHook>
       <span style={styles.wrapper}>
         {isNavLink ? (
-          <NavLink className="line-effect" to={to}>
+          <NavLink
+            className="line-effect"
+            to={to}>
             {children}
           </NavLink>
         ) : (
-          <a style={styles.a} className="line-effect" href={href} target="blank">
+          <a
+            style={styles.a}
+            className="line-effect"
+            href={href}
+            rel="noopener noreferrer"
+            target="_blank" >
             {children}
           </a>
         )}

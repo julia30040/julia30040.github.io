@@ -3,24 +3,37 @@ import React, { PureComponent } from 'react';
 import radium from 'radium';
 import PageTitle from '../../component/Element/PageTitle.jsx';
 import Projects from './Projects.jsx';
-import Avatar from '../../component/About/Avatar.jsx';
-import Info from '../../component/About/Info.jsx';
-import { revealLeft as revealLeftAnimation } from '../../styles/reveal.js';
 
 const styles = {
   wrapper: {
     width: '100%',
     height: '100%',
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     justifyContent: 'center',
+    '@media screen and (max-width: 767px)': {
+      alignItems: 'flex-start',
+      overflowY: 'scroll',
+    },
   },
   mainContainer: {
     maxWidth: 800,
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
     position: 'relative',
-    top: -48,
+    margin: '96px 0 0',
     padding: 32,
     zIndex: 0,
+    '@media screen and (max-width: 767px)': {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      top: 0,
+      margin: 0,
+    },
   },
   row: {
     display: 'flex',

@@ -2,6 +2,12 @@
 import React, { PureComponent } from 'react';
 import radium from 'radium';
 
+const styles = {
+  wrapper: {
+    display: 'inline-block',
+  },
+};
+
 type Props = {
   children: {},
   isWrapText?: boolean,
@@ -24,13 +30,11 @@ class MouseEventHook extends PureComponent<Props> {
   onMouseEnter(e) {
     this.cursorHalo.classList.add("cursor-halo-active");
     this.cursorMoon.classList.add("cursor-moon-active");
-    console.log('enter');
   }
 
   onMouseLeave(e) {
     this.cursorHalo.classList.remove("cursor-halo-active");
     this.cursorMoon.classList.remove("cursor-moon-active");
-    console.log('out');
   }
 
   render() {
@@ -44,7 +48,9 @@ class MouseEventHook extends PureComponent<Props> {
         {children}
       </span>
     ) : (
-      <div ref={ref => { this.link = ref; }}>
+      <div
+        ref={ref => { this.link = ref; }}
+        style={styles.wrapper}>
         {children}
       </div>
     );
