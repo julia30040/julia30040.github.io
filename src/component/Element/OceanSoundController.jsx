@@ -2,9 +2,12 @@
 
 import React, { PureComponent } from 'react';
 import radium from 'radium';
+import debug from 'debug';
 import { Howl, Howler } from 'howler';
 import MouseEventHook from './MouseEventHook.jsx';
 import seaWaveSound from '../../media/sound/morning_sea_wave.mp3';
+
+const debugVolume = debug('Portfolio:Volume');
 
 const wavingKeyframes = radium.keyframes({
   '0%': {
@@ -74,19 +77,51 @@ const styles = {
   },
 };
 
-const INITIAL_SOUND_VOLUME = 0.3;
+const INITIAL_SOUND_VOLUME = 0.5;
 
 class OceanSoundController extends PureComponent {
   constructor(props) {
     super(props);
 
     this.state = {
-      isPlaying: true,
+      isVolumeOn: true,
     };
+
+    this.isWaving = false;
   }
 
   componentDidMount() {
     this.startSeaWaving();
+
+    window.addEventListener('mousemove', (e) => this.onMouseMove(e));
+  }
+
+  componentWillUnmount() {
+    if (this.fadeoutTimeout) {
+      clearTimeout(this.fadeoutTimeout);
+    }
+
+    window.removeEventListener('mousemove');
+  }
+
+  onMouseMove(e) {
+    const { isVolumeOn } = this.state;
+
+    if (isVolumeOn && !this.isWaving) {
+      this.isWaving = true;
+
+      const wavingVolume = INITIAL_SOUND_VOLUME + 0.05 * (Math.sqrt(Math.abs(e.movementX) + Math.abs(e.movementY)));
+
+      debugVolume('waving:', wavingVolume);
+
+      this.sound.fade(this.sound.volume(), wavingVolume, 500);
+
+      this.fadeoutTimeout = setTimeout(() => {
+        this.sound.fade(wavingVolume, INITIAL_SOUND_VOLUME, 500);
+
+        this.isWaving = false;
+      }, 2000);
+    }
   }
 
   startSeaWaving() {
@@ -97,23 +132,23 @@ class OceanSoundController extends PureComponent {
       volume: INITIAL_SOUND_VOLUME,
     });
 
-    this.oceanSound = this.sound.play();
+    this.sound.play();
   }
 
   toggleSound() {
-    const { isPlaying } = this.state;
+    const { isVolumeOn } = this.state;
 
-    this.setState({ isPlaying: !isPlaying });
-
-    if (isPlaying) {
-      this.sound.fade(this.sound.volume(), 0, 2000, this.oceanSound);
+    if (isVolumeOn) {
+      this.sound.fade(this.sound.volume(), 0, 2000);
     } else {
-      this.sound.fade(0, INITIAL_SOUND_VOLUME, 5000, this.oceanSound);
+      this.sound.fade(0, INITIAL_SOUND_VOLUME, 5000);
     }
+
+    this.setState({ isVolumeOn: !isVolumeOn });
   }
 
   render() {
-    const { isPlaying } = this.state;
+    const { isVolumeOn } = this.state;
 
     return (
       <MouseEventHook isWrapText={false}>
@@ -124,11 +159,11 @@ class OceanSoundController extends PureComponent {
             key="volume-icon"
             style={[
               {
-                animationPlayState: isPlaying ? 'running' : 'paused',
+                animationPlayState: isVolumeOn ? 'running' : 'paused',
               },
               styles.waving,
             ]}
-            className={isPlaying ? "fas fa-volume-up" : "fas fa-volume-off"}></i>
+            className={isVolumeOn ? "fas fa-volume-up" : "fas fa-volume-off"}></i>
         </button>
       </MouseEventHook>
     );
