@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "8fe8e20fd1815982154d",
+    "revision": "7040cf6baa9eea558162",
     "url": "/julia30040.github.io/static/css/main.feff597f.chunk.css"
   },
   {
-    "revision": "8fe8e20fd1815982154d",
-    "url": "/julia30040.github.io/static/js/main.8fe8e20f.chunk.js"
+    "revision": "7040cf6baa9eea558162",
+    "url": "/julia30040.github.io/static/js/main.7040cf6b.chunk.js"
   },
   {
     "revision": "44920f979891555dbef8",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/julia30040.github.io/static/media/sea_2.88b28566.JPG"
   },
   {
-    "revision": "4fdb7769f4536c7b41b6342989a91acd",
+    "revision": "8ef70b93f58aa939274252ba96e282bf",
     "url": "/julia30040.github.io/index.html"
   }
 ];
