@@ -41,7 +41,7 @@ const wavingKeyframes = radium.keyframes({
 
 const styles = {
   volumeBtn: {
-    position: 'fixed',
+    position: 'absolute',
     right: 48,
     bottom: 32,
     color: '#fff',

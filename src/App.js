@@ -10,6 +10,9 @@ const styles = {
   fullHeight: {
     height: '100%',
   },
+  wrapper: {
+    overflow: 'hidden',
+  },
 };
 
 class App extends Component {
@@ -17,7 +20,10 @@ class App extends Component {
     return (
       <StyleRoot style={styles.fullHeight}>
         <Router>
-          <div style={styles.fullHeight}>
+          <div style={[
+              styles.wrapper,
+              styles.fullHeight,
+            ]}>
             <MovingBackground url={seaImage} />
             <Header />
             <MainBoard />
