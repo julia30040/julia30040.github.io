@@ -1,23 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "7040cf6baa9eea558162",
-    "url": "/julia30040.github.io/static/css/main.feff597f.chunk.css"
+    "revision": "e92b5ebe09cada5fe388",
+    "url": "/julia30040.github.io/static/css/main.b88d0a8a.chunk.css"
   },
   {
-    "revision": "7040cf6baa9eea558162",
-    "url": "/julia30040.github.io/static/js/main.7040cf6b.chunk.js"
+    "revision": "e92b5ebe09cada5fe388",
+    "url": "/julia30040.github.io/static/js/main.e92b5ebe.chunk.js"
   },
   {
-    "revision": "44920f979891555dbef8",
-    "url": "/julia30040.github.io/static/js/1.44920f97.chunk.js"
+    "revision": "a709be13264257e450a0",
+    "url": "/julia30040.github.io/static/js/1.a709be13.chunk.js"
   },
   {
     "revision": "3c4a7c1b7c0b5a5cc0ca",
     "url": "/julia30040.github.io/static/js/runtime~main.3c4a7c1b.js"
-  },
-  {
-    "revision": "0f99d2326b9d0515063637ed1895de0a",
-    "url": "/julia30040.github.io/static/media/avatar.0f99d232.png"
   },
   {
     "revision": "1da6d89c9e260339ac4604c03ef5e71b",
@@ -36,7 +32,11 @@ self.__precacheManifest = [
     "url": "/julia30040.github.io/static/media/sea_2.88b28566.JPG"
   },
   {
-    "revision": "8ef70b93f58aa939274252ba96e282bf",
+    "revision": "0f99d2326b9d0515063637ed1895de0a",
+    "url": "/julia30040.github.io/static/media/avatar.0f99d232.png"
+  },
+  {
+    "revision": "97211621982cc79b0296a95a54199fdc",
     "url": "/julia30040.github.io/index.html"
   }
 ];
