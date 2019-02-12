@@ -117,19 +117,19 @@ class OceanSoundController extends PureComponent {
       this.sound.fade(this.sound.volume(), wavingVolume, 500);
 
       this.fadeoutTimeout = setTimeout(() => {
-        this.fadeOut(500);
+        this.fadeOut(wavingVolume, 500);
 
         this.isWaving = false;
       }, 2000);
     }
   }
 
-  fadeOut(duration) {
+  fadeOut(from, duration) {
     const { isVolumeOn } = this.state;
 
     const to = isVolumeOn ? INITIAL_SOUND_VOLUME : 0;
 
-    this.sound.fade(this.sound.volume(), to, duration);
+    this.sound.fade(from, to, duration);
   }
 
   startSeaWaving() {
