@@ -4,20 +4,20 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Header from './container/Header.jsx';
 import MainBoard from './container/MainBoard.jsx';
 import MovingBackground from './component/Element/MovingBackground.jsx';
-import seaImage from './img/sea_2.JPG';
+import seaImage from './media/img/sea_2.JPG';
 
 const styles = {
-  root: {
-    height: '100vh',
+  fullHeight: {
+    height: '100%',
   },
 };
 
 class App extends Component {
   render() {
     return (
-      <StyleRoot>
+      <StyleRoot style={styles.fullHeight}>
         <Router>
-          <div style={styles.root}>
+          <div style={styles.fullHeight}>
             <MovingBackground url={seaImage} />
             <Header />
             <MainBoard />

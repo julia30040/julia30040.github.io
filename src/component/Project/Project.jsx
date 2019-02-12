@@ -43,7 +43,7 @@ const styles = {
     width: 150,
     height: 150,
     borderRadius: 4,
-    backgroundColor: 'rgba(255, 255, 255, 0.3)',
+    backgroundColor: '#fff5c3',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   },

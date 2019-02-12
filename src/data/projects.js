@@ -1,5 +1,5 @@
-import geesaa from '../img/geesaa_logo.png';
-import eatme from '../img/eatme_logo.jpg';
+import geesaa from '../media/img/geesaa_logo.png';
+import eatme from '../media/img/eatme_logo.jpg';
 
 const FORESTAGE_WEB = 'PROJECT/FORESTAGE_WEB';
 const FORESTAGE_APP = 'PROJECT/FORESTAGE_APP';

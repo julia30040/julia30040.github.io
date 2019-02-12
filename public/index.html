@@ -36,9 +36,8 @@
       cursor: none;
     }
 
-    html, body {
+    html, body, #root {
       height: 100%;
-      overflow: hidden;
     }
 
     button {
@@ -120,14 +119,19 @@
     const moon = document.getElementById("cursor-moon");
     const halo = document.getElementById("cursor-halo");
 
-    window.onmousemove = (event) => {
-      moon.style.top = event.clientY + "px";
-      moon.style.left = event.clientX + "px";
+    if (window.screen.width > 1024) {
+      window.onmousemove = (event) => {
+        moon.style.top = event.clientY + "px";
+        moon.style.left = event.clientX + "px";
 
-      setTimeout(() => {
-        halo.style.top = event.clientY + "px";
-        halo.style.left = event.clientX + "px";
-      }, 100);
+        setTimeout(() => {
+          halo.style.top = event.clientY + "px";
+          halo.style.left = event.clientX + "px";
+        }, 100);
+      }
+    } else {
+      moon.style.display = 'none';
+      halo.style.display = 'none';
     }
   </script>
 </html>
