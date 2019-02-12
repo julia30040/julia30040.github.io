@@ -1,6 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 import LineEffectLink from '../component/Element/LineEffectLink.jsx';
+import Logo from '../component/Element/Logo.jsx';
 
 const styles = {
   wrapper: {
@@ -19,6 +20,7 @@ class Header extends Component {
   render() {
     return (
       <div style={styles.wrapper}>
+        <Logo />
         <LineEffectLink isNavLink to="/about">
           About
         </LineEffectLink>
