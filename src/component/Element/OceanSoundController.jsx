@@ -3,7 +3,7 @@
 import React, { PureComponent } from 'react';
 import radium from 'radium';
 import debug from 'debug';
-import { Howl, Howler } from 'howler';
+import { Howl } from 'howler';
 import MouseEventHook from './MouseEventHook.jsx';
 import seaWaveSound from '../../media/sound/morning_sea_wave.mp3';
 
@@ -77,7 +77,7 @@ const styles = {
   },
 };
 
-const INITIAL_SOUND_VOLUME = 0.5;
+const INITIAL_SOUND_VOLUME = 0.4;
 
 class OceanSoundController extends PureComponent {
   constructor(props) {
@@ -110,18 +110,26 @@ class OceanSoundController extends PureComponent {
     if (isVolumeOn && !this.isWaving) {
       this.isWaving = true;
 
-      const wavingVolume = INITIAL_SOUND_VOLUME + 0.05 * (Math.sqrt(Math.abs(e.movementX) + Math.abs(e.movementY)));
+      const wavingVolume = INITIAL_SOUND_VOLUME + 0.06 * (Math.sqrt(Math.abs(e.movementX) + Math.abs(e.movementY)));
 
       debugVolume('waving:', wavingVolume);
 
       this.sound.fade(this.sound.volume(), wavingVolume, 500);
 
       this.fadeoutTimeout = setTimeout(() => {
-        this.sound.fade(wavingVolume, INITIAL_SOUND_VOLUME, 500);
+        this.fadeOut(500);
 
         this.isWaving = false;
       }, 2000);
     }
+  }
+
+  fadeOut(duration) {
+    const { isVolumeOn } = this.state;
+
+    const to = isVolumeOn ? INITIAL_SOUND_VOLUME : 0;
+
+    this.sound.fade(this.sound.volume(), to, duration);
   }
 
   startSeaWaving() {
