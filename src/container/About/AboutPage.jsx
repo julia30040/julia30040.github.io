@@ -12,22 +12,19 @@ const styles = {
     width: '100%',
     height: '100%',
     display: 'flex',
-    alignItems: 'center',
     justifyContent: 'center',
-    '@media screen and (max-width: 767px)': {
-      alignItems: 'flex-start',
-      overflowY: 'scroll',
-    },
+    alignItems: 'flex-start',
+    overflowY: 'scroll',
   },
   mainContainer: {
     maxWidth: 800,
-    position: 'relative',
-    top: -48,
     padding: 32,
+    margin: '10vh 0 0',
     zIndex: 0,
     '@media screen and (max-width: 767px)': {
       top: 0,
       height: '100%',
+      margin: 0,
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
@@ -58,8 +55,8 @@ class AboutPage extends PureComponent {
             <Avatar />
             <Info />
           </div>
+          <MonsteraDeliciousa />
         </div>
-        <MonsteraDeliciousa />
       </div>
     );
   }

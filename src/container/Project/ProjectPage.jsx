@@ -11,10 +11,7 @@ const styles = {
     display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'center',
-    '@media screen and (max-width: 767px)': {
-      alignItems: 'flex-start',
-      overflowY: 'scroll',
-    },
+    overflowY: 'scroll',
   },
   mainContainer: {
     maxWidth: 800,
@@ -24,12 +21,10 @@ const styles = {
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
     position: 'relative',
-    margin: '96px 0 0',
+    margin: '13vh 0 0',
     padding: 32,
     zIndex: 0,
     '@media screen and (max-width: 767px)': {
-      display: 'flex',
-      flexDirection: 'column',
       alignItems: 'center',
       top: 0,
       margin: 0,
