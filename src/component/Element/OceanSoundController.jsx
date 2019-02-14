@@ -147,9 +147,10 @@ class OceanSoundController extends PureComponent {
     const { isVolumeOn } = this.state;
 
     if (isVolumeOn) {
-      this.sound.fade(this.sound.volume(), 0, 2000);
+      this.sound.pause();
     } else {
-      this.sound.fade(0, INITIAL_SOUND_VOLUME, 5000);
+      this.sound.fade(0, INITIAL_SOUND_VOLUME, 2000);
+      this.sound.play();
     }
 
     this.setState({ isVolumeOn: !isVolumeOn });
