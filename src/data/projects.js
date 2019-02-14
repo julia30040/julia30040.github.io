@@ -8,12 +8,29 @@ import geesaa from '../media/img/geesaa_logo.png';
 import eatme from '../media/img/eatme_logo.jpg';
 import uno from '../media/img/uno_logo.png';
 import ccumis from '../media/img/ccu_mis_logo.png';
+import geesaa_1 from '../media/img/geesaa_1.PNG';
+import geesaa_2 from '../media/img/geesaa_2.PNG';
+import geesaa_3 from '../media/img/geesaa_3.PNG';
+import geesaa_4 from '../media/img/geesaa_4.PNG';
 
 export default [{
   id: 1,
   title: 'GEESAA',
   subtitle: '智慧手沖咖啡壺 App',
   cover: geesaa,
+  media: [{
+    type: 'PHOTO',
+    url: geesaa_1,
+  }, {
+    type: 'PHOTO',
+    url: geesaa_2,
+  }, {
+    type: 'PHOTO',
+    url: geesaa_3,
+  }, {
+    type: 'PHOTO',
+    url: geesaa_4,
+  }],
   types: [FORESTAGE_APP],
   description: '透過雲端傳送專業咖啡師的配方，將手沖的溫度及風味帶回家。\n在這項專案中，使用 ReactNative 及相關開源專案來進行開發，其中運用 RN Animations 與使用者互動時，讓畫面更直覺、舒適。並與同事、第三方軟硬體合作，傳送配方、接收咖啡機回應，並結合開源專案介接 itunes 音樂、選擇手機中的音樂，讓人在沖泡咖啡的過程中更融入氛圍。',
   tags: [

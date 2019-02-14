@@ -5,6 +5,7 @@ import radium from 'radium';
 import _ from 'lodash';
 import MouseEventHook from '../Element/MouseEventHook.jsx';
 import LineEffectLink from '../Element/LineEffectLink.jsx';
+import ProjectMedia from './ProjectMedia.jsx';
 import {
   revealLeft as revealLeftAnimation,
   revealUp as revealUpAnimation,
@@ -66,15 +67,20 @@ const styles = {
     margin: 0,
   },
   detailWrapper: {
-    margin: '0 0 0 32px',
+    margin: '15px 0 0 32px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
     '@media screen and (max-width: 767px)': {
-      margin: 0,
+      margin: '16px 0',
     },
   },
   description: {
     fontSize: 15,
     letterSpacing: 1,
     color: '#e3d5b2',
+    margin: '0 0 15px',
   },
   tag: {
     fontSize: 13,
@@ -171,11 +177,14 @@ class Project extends PureComponent {
                   {_.join(project.tags, '/ ')}
                 </div>
               ) : null}
+              {project.media ? (
+                <ProjectMedia media={project.media} />
+              ) : null}
               {project.websiteLink ? (
-                <LineEffectLink href={project.websiteLink}>+ see website</LineEffectLink>
+                <LineEffectLink href={project.websiteLink}>+ view website</LineEffectLink>
               ) : null}
               {project.appLink ? (
-                <LineEffectLink href={project.appLink}>+ see app</LineEffectLink>
+                <LineEffectLink href={project.appLink}>+ view app</LineEffectLink>
               ) : null}
               {project.relatedLink ? (
                 <LineEffectLink href={project.relatedLink}>+ see more</LineEffectLink>
