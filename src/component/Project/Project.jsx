@@ -9,6 +9,11 @@ import {
   revealLeft as revealLeftAnimation,
   revealUp as revealUpAnimation,
 } from '../../styles/reveal.js';
+import {
+  FORESTAGE_WEB,
+  FORESTAGE_APP,
+  BACKSTAGE,
+} from '../../share/project.js';
 
 const fadeInKeyframes = radium.keyframes({
   '0%': {
@@ -39,13 +44,20 @@ const styles = {
       transform: 'translateY(-10px)'
     },
   },
-  cover: {
+  coverWrapper: {
     width: 150,
     height: 150,
+    padding: 6,
     borderRadius: 4,
-    backgroundColor: '#fff5c3',
-    backgroundSize: 'cover',
+    backgroundColor: 'rgba(255, 255, 255, 0.4)',
+  },
+  cover: {
+    width: '100%',
+    height: '100%',
+    borderRadius: 4,
+    backgroundSize: 'contain',
     backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
   },
   title: {
     color: '#ffffff',
@@ -106,6 +118,12 @@ const styles = {
   },
 };
 
+// const PROJECT_LINK_TEXT = {
+//   [FORESTAGE_WEB]: '+ see website',
+//   [FORESTAGE_APP]: '+ see more',
+//   [BACKSTAGE]: '+ see more',
+// }
+
 class Project extends PureComponent {
   render() {
     const {
@@ -132,6 +150,7 @@ class Project extends PureComponent {
             isActived && styles.isActived,
           ]}>
           <MouseEventHook isWrapText={false}>
+            <div style={styles.coverWrapper}>
               <div
                 style={[
                   styles.cover,
@@ -139,9 +158,10 @@ class Project extends PureComponent {
                     backgroundImage: `url(${project.cover})`
                   },
                 ]} />
+              </div>
               <h3 style={styles.title}>{project.title}</h3>
               <h5 style={styles.subtitle}>{project.subtitle}</h5>
-            <h5 style={styles.subtitle}>{project.year}</h5>
+              <h5 style={styles.subtitle}>{project.year}</h5>
           </MouseEventHook>
         </div>
         {isActived ? (
@@ -162,8 +182,14 @@ class Project extends PureComponent {
                   {_.join(project.tags, '/ ')}
                 </div>
               ) : null}
-              {project.link ? (
-                <LineEffectLink href={project.link}>+ see more</LineEffectLink>
+              {project.websiteLink ? (
+                <LineEffectLink href={project.websiteLink}>+ see website</LineEffectLink>
+              ) : null}
+              {project.appLink ? (
+                <LineEffectLink href={project.appLink}>+ see app</LineEffectLink>
+              ) : null}
+              {project.relatedLink ? (
+                <LineEffectLink href={project.relatedLink}>+ see more</LineEffectLink>
               ) : null}
           </div>
         ) : null}
