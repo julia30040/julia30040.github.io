@@ -1,39 +1,35 @@
 // @flow
-import React from 'react';
+
+import React, { PureComponent } from 'react';
 import radium from 'radium';
 import MouseEventHook from '../Element/MouseEventHook.jsx';
 
 const styles = {
+  outerWrapper: {
+    '@media screen and (max-width: 767px)': {
+      width: '100%',
+    },
+  },
   wrapper: {
     height: 100,
     width: 'auto',
     padding: '10px 8px',
     margin: '0 0 12px',
     transition: 'all .32s ease-out',
-    zIndex: 1000,
-    position: 'relative',
+    display: 'flex',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
     ':hover': {
       backgroundColor: 'rgba(255, 255, 255, 0.6)',
-    },
-    ':focus': {
-      padding: '10px 32px',
-      backgroundColor: '#395443',
-      transform: 'scale(3.2) translateY(-20px)',
-      clipPath: 'polygon(0 0, 100% 0, 93% 100%, 7% 100%)',
     },
     '@media screen and (max-width: 767px)': {
       width: '100%',
       height: 'auto',
       padding: '0',
+      flexDirection: 'column',
+      alignItems: 'center',
       ':hover': {
         backgroundColor: 'transparent',
-      },
-      ':focus': {
-        padding: '0',
-        backgroundColor: 'transparent',
-        transform: 'none',
-        position: 'relative',
-        clipPath: 'none',
       },
     },
   },
@@ -48,6 +44,38 @@ const styles = {
       margin: '0 0 8px',
     },
   },
+  mediaBg: {
+    margin: '0 8px',
+    boxShadow: '4px 4px 0px 0px rgba(128, 128, 128, 0.5)',
+  },
+  scroller: {
+    overflowX: 'scroll',
+    width: '100%',
+    position: 'fixed',
+    top: 20,
+    left: 0,
+    zIndex: 1000,
+    backgroundColor: '#395443',
+    transition: 'all 0.36s ease-out',
+    pointerEvents: 'none',
+    opacity: 0,
+    '@media screen and (max-width: 767px)': {
+      display: 'none',
+    },
+  },
+  focusingScroller: {
+    top: 10,
+    pointerEvents: 'auto',
+    opacity: 1,
+  },
+  focusingInnerWrapper: {
+    padding: 16,
+    height: 400,
+    display: 'flex',
+    alignItems: 'stretch',
+    justifyContent: 'flex-start',
+    float: 'left',
+  },
 };
 
 type ProjectMediaType = {
@@ -57,25 +85,58 @@ type ProjectMediaType = {
 
 type Props = {
   media: array<ProjectMediaType>,
-}
+};
 
-function ProjectMedia({
-  media
-}: Props){
-  return (
-    <MouseEventHook isWrapText={false}>
-      <button
-        style={styles.wrapper}>
-        {media.map((mediaItem, index) => mediaItem.type === 'PHOTO' ? (
-          <img
-            key={`media-${mediaItem.url}-${index}`}
-            src={mediaItem.url}
-            alt="projectMedia"
-            style={styles.media} />
-        ) : null)}
-      </button>
-    </MouseEventHook>
-  );
+type State = {
+  isFocusing: boolean,
+};
+
+class ProjectMedia extends PureComponent<State, Props> {
+  static state = {
+    isFocusing: false,
+  }
+
+  render() {
+    const { isFocusing } = this.state;
+    const { media } = this.props;
+
+    return (
+      <MouseEventHook isWrapText={false} style={styles.outerWrapper}>
+        <div
+          style={styles.wrapper}
+          onClick={() => this.setState({ isFocusing: !isFocusing })}>
+          {media.map((mediaItem, index) => mediaItem.type === 'PHOTO' ? (
+            <img
+              key={`media-${mediaItem.url}-${index}`}
+              src={mediaItem.url}
+              alt="projectMedia"
+              style={styles.media} />
+          ) : null)}
+        </div>
+        <div
+          style={[
+            styles.scroller,
+            isFocusing && styles.focusingScroller,
+          ]}
+          onClick={() => this.setState({ isFocusing: false })}>
+          <div
+            style={styles.focusingInnerWrapper}>
+            {media.map((mediaItem, index) => mediaItem.type === 'PHOTO' ? (
+              <img
+                key={`media-${mediaItem.url}-${index}`}
+                src={mediaItem.url}
+                alt="projectMedia"
+                style={[
+                  styles.media,
+                  styles.mediaBg,
+                ]} />
+            ) : null)}
+          </div>
+          <button style={styles.closeBtn}>x</button>
+        </div>
+      </MouseEventHook>
+    );
+  }
 }
 
 export default radium(ProjectMedia);

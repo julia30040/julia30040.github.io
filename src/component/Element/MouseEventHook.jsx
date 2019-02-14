@@ -11,6 +11,7 @@ const styles = {
 type Props = {
   children: {},
   isWrapText?: boolean,
+  style?: ?{},
 };
 
 class MouseEventHook extends PureComponent<Props> {
@@ -45,16 +46,22 @@ class MouseEventHook extends PureComponent<Props> {
     const {
       children,
       isWrapText,
+      style,
     } = this.props;
 
     return isWrapText ? (
-      <span ref={ref => { this.link = ref; }}>
+      <span
+        ref={ref => { this.link = ref; }}
+        style={style}>
         {children}
       </span>
     ) : (
       <div
         ref={ref => { this.link = ref; }}
-        style={styles.wrapper}>
+        style={[
+          styles.wrapper,
+          style,
+        ]}>
         {children}
       </div>
     );
@@ -63,6 +70,7 @@ class MouseEventHook extends PureComponent<Props> {
 
 MouseEventHook.defaultProps = {
   isWrapText: true,
+  style: null,
 };
 
 export default radium(MouseEventHook);

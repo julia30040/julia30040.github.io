@@ -12,6 +12,10 @@ import geesaa_1 from '../media/img/geesaa_1.PNG';
 import geesaa_2 from '../media/img/geesaa_2.PNG';
 import geesaa_3 from '../media/img/geesaa_3.PNG';
 import geesaa_4 from '../media/img/geesaa_4.PNG';
+import geesaa_5 from '../media/img/geesaa_5.jpg';
+import geesaa_6 from '../media/img/geesaa_6.jpg';
+import geesaa_7 from '../media/img/geesaa_7.jpg';
+import geesaa_8 from '../media/img/geesaa_8.jpg';
 
 export default [{
   id: 1,
@@ -23,10 +27,22 @@ export default [{
     url: geesaa_1,
   }, {
     type: 'PHOTO',
+    url: geesaa_8,
+  }, {
+    type: 'PHOTO',
     url: geesaa_2,
   }, {
     type: 'PHOTO',
     url: geesaa_3,
+  }, {
+    type: 'PHOTO',
+    url: geesaa_5,
+  }, {
+    type: 'PHOTO',
+    url: geesaa_6,
+  }, {
+    type: 'PHOTO',
+    url: geesaa_7,
   }, {
     type: 'PHOTO',
     url: geesaa_4,
