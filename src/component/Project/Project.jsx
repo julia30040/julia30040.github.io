@@ -9,11 +9,6 @@ import {
   revealLeft as revealLeftAnimation,
   revealUp as revealUpAnimation,
 } from '../../styles/reveal.js';
-import {
-  FORESTAGE_WEB,
-  FORESTAGE_APP,
-  BACKSTAGE,
-} from '../../share/project.js';
 
 const fadeInKeyframes = radium.keyframes({
   '0%': {
@@ -117,12 +112,6 @@ const styles = {
     opacity: 1,
   },
 };
-
-// const PROJECT_LINK_TEXT = {
-//   [FORESTAGE_WEB]: '+ see website',
-//   [FORESTAGE_APP]: '+ see more',
-//   [BACKSTAGE]: '+ see more',
-// }
 
 class Project extends PureComponent {
   render() {

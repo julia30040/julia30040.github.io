@@ -52,7 +52,7 @@ export default [{
   subtitle: '官方網站前後台',
   cover: uno,
   types: [FORESTAGE_WEB, BACKSTAGE],
-  description: '此專案主要展示台達電 uno 室內環境品質監控產品的資訊及解決方案。前台畫面主要負責依照原有架構來做 RWD，並使用 react-i18next 來建立多語系。並建立後台，操作的介面主要由側邊推出修改欄位，修改時能直接預覽真實的畫面，方便查看是否需要修正圖片大小或文字長度。',
+  description: '此專案主要展示台達電 uno 室內環境品質監控產品的資訊及解決方案。前台主要負責依照原有架構將畫面做 RWD，並使用 react-i18next 來建立多語系。並建立後台，操作的介面主要由側邊推出修改欄位，修改時能直接預覽真實的畫面，方便查看是否需要修正圖片大小或文字長度。',
   tags: [
     'ReactJS',
     'react-i18next',
@@ -76,7 +76,7 @@ export default [{
     'BootStrap',
     'MongoDB',
   ],
-  websiteLink: 'https://www.uno.deltaww.com/',
+  websiteLink: 'https://www.mis.ccu.edu.tw/',
   appLink: null,
   relatedLink: null,
   year: '2016',
