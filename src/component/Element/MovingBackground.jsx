@@ -12,25 +12,60 @@ const styles = {
     left: 0,
   },
   background: {
+    backgroundSize: 'cover',
+    backgroundPosition: 'center bottom',
+    backgroundRepeat: 'no-repeat',
+  },
+  backgroundSm: {
     width: 'calc(100% + 80px)',
     height: 'calc(100vh + 80px)',
     position: 'absolute',
     left: '-40px',
     top: '-40px',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center bottom',
-    backgroundRepeat: 'no-repeat',
-    transition: 'transform 4.2s ease-out',
-  }
+    transition: 'transform 4.2s ease-out, filter .6s linear',
+    filter: 'blur(8px)',
+    WebkitFilter: 'blur(8px)',
+  },
+  backgroundLg: {
+    width: '100%',
+    height: '100%',
+    transition: 'opacity 0.24s linear',
+    opacity: 0,
+  },
+  removeBlur: {
+    filter: 'blur(0)',
+    WebkitFilter: 'blur(0)',
+  },
+  show: {
+    opacity: 1,
+  },
 };
 
 type Props = {
+  smSizeURL?: ?string,
   url: string,
 };
 
 class MovingBackground extends PureComponent<Props, State> {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isLoaded: false,
+    };
+  }
+
   componentDidMount() {
+    const {
+      smSizeURL,
+      url,
+    } = this.props;
+
     this.background.addEventListener('mousemove', (e) => this.move(e));
+
+    if (smSizeURL && url) {
+      this.loadLargeImage(url);
+    }
   }
 
   componentWillUnMount() {
@@ -44,8 +79,23 @@ class MovingBackground extends PureComponent<Props, State> {
     e.currentTarget.style.transform = `translate(${translateX}px, ${translateY}px)`;
   }
 
+  loadLargeImage(url) {
+    const image = new Image();
+
+    image.onload = () => {
+      this.setState({ isLoaded: true });
+    }
+
+    image.src = url;
+  }
+
   render() {
-    const { url } = this.props;
+    const { isLoaded } = this.state;
+
+    const {
+      smSizeURL,
+      url,
+    } = this.props;
 
     return (
       <div style={styles.wrapper}>
@@ -53,13 +103,29 @@ class MovingBackground extends PureComponent<Props, State> {
           ref={ref => { this.background = ref; }}
           style={[
             styles.background,
+            styles.backgroundSm,
+            isLoaded && styles.removeBlur,
             {
-              backgroundImage: `url(${url})`
+              backgroundImage: `url(${smSizeURL || url})`,
             },
-          ]} />
+          ]}>
+          <div
+            style={[
+              styles.background,
+              styles.backgroundLg,
+              isLoaded && styles.show,
+              {
+                backgroundImage: `url(${url})`,
+              },
+            ]} />
+        </div>
       </div>
     );
   }
 }
+
+MovingBackground.defaultProps = {
+  smSizeURL: null,
+};
 
 export default radium(MovingBackground);
