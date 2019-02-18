@@ -76,7 +76,7 @@ self.__precacheManifest = [
     "url": "/julia30040.github.io/static/media/sea_2_sm.45d10d69.JPG"
   },
   {
-    "revision": "250ec75d58b5ef3c593005ad7ada3af0",
+    "revision": "61b3a0f8b808264b25f9ef01755afe8f",
     "url": "/julia30040.github.io/index.html"
   }
 ];
