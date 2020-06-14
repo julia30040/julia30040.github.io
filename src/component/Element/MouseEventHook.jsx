@@ -15,20 +15,26 @@ type Props = {
 };
 
 class MouseEventHook extends PureComponent<Props> {
+  constructor(props) {
+    super(props);
+    this.onMouseEnter = this.onMouseEnter.bind(this);
+    this.onMouseLeave = this.onMouseLeave.bind(this);
+  }
+
   componentDidMount() {
     if (window.screen.width > 1024) {
-      this.link.addEventListener('mouseenter', (e) => this.onMouseEnter(e));
-      this.link.addEventListener('mouseleave', (e) => this.onMouseLeave(e));
+      this.link.addEventListener('mouseenter', this.onMouseEnter);
+      this.link.addEventListener('mouseleave', this.onMouseLeave);
 
       this.cursorMoon = document.getElementById("cursor-moon");
       this.cursorHalo = document.getElementById("cursor-halo");
     }
   }
 
-  componentWillUnMount() {
+  componentWillUnmount() {
     if (this.link) {
-      this.link.removeEventListener('mouseenter');
-      this.link.removeEventListener('mouseout');
+      this.link.removeEventListener('mouseenter', this.onMouseEnter);
+      this.link.removeEventListener('mouseout', this.onMouseLeave);
     }
   }
 
