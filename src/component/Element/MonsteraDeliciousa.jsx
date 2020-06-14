@@ -47,14 +47,68 @@ const stringifiedSvg = `
     </filter></defs>
   </svg>`;
 
-class Avatar extends PureComponent {
+class MonsteraDeliciousa extends PureComponent {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      pos1: null,
+      pos2: null,
+      pos3: null,
+      pos4: null,
+    }
+    this.monsteraDeliciousa = React.createRef();
+  }
+
+  dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    this.setState({
+      pos3: e.clientX,
+      pos4: e.clientY,
+    });
+    document.onmouseup = this.closeDragElement.bind(this);
+    // call a function whenever the cursor moves:
+    document.onmousemove = this.elementDrag.bind(this);
+  }
+
+  elementDrag(e) {
+    const {
+      pos1,
+      pos2,
+      pos3,
+      pos4,
+    } = this.state;
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    this.setState({
+      pos1: pos3 - e.clientX,
+      pos2: pos4 - e.clientY,
+      pos3: e.clientX,
+      pos4: e.clientY,
+    })
+    // set the element's new position:
+    this.monsteraDeliciousa.current.style.top = (this.monsteraDeliciousa.current.offsetTop - pos2) + "px";
+    this.monsteraDeliciousa.current.style.left = (this.monsteraDeliciousa.current.offsetLeft - pos1) + "px";
+  }
+
+  closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+
   render() {
     return (
       <div
         style={styles.wrapper}
-        dangerouslySetInnerHTML={{__html: stringifiedSvg}}/>
+        dangerouslySetInnerHTML={{__html: stringifiedSvg}}
+        ref={this.monsteraDeliciousa}
+        onMouseDown={(e) => this.dragMouseDown(e)} />
     );
   }
 }
 
-export default radium(Avatar);
+export default radium(MonsteraDeliciousa);
