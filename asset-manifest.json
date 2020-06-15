@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/julia30040.github.io/static/css/main.676661b8.chunk.css",
-    "main.js": "/julia30040.github.io/static/js/main.10a58e77.chunk.js",
-    "main.js.map": "/julia30040.github.io/static/js/main.10a58e77.chunk.js.map",
+    "main.js": "/julia30040.github.io/static/js/main.9336dd24.chunk.js",
+    "main.js.map": "/julia30040.github.io/static/js/main.9336dd24.chunk.js.map",
     "runtime-main.js": "/julia30040.github.io/static/js/runtime-main.fb74d0a5.js",
     "runtime-main.js.map": "/julia30040.github.io/static/js/runtime-main.fb74d0a5.js.map",
     "static/js/2.ec43d7b4.chunk.js": "/julia30040.github.io/static/js/2.ec43d7b4.chunk.js",
     "static/js/2.ec43d7b4.chunk.js.map": "/julia30040.github.io/static/js/2.ec43d7b4.chunk.js.map",
     "index.html": "/julia30040.github.io/index.html",
-    "precache-manifest.56d02c786e24830dea2be41b04a77060.js": "/julia30040.github.io/precache-manifest.56d02c786e24830dea2be41b04a77060.js",
+    "precache-manifest.dcc1bdd53f9f497fc8b4639eff7d6248.js": "/julia30040.github.io/precache-manifest.dcc1bdd53f9f497fc8b4639eff7d6248.js",
     "service-worker.js": "/julia30040.github.io/service-worker.js",
     "static/css/main.676661b8.chunk.css.map": "/julia30040.github.io/static/css/main.676661b8.chunk.css.map",
     "static/js/2.ec43d7b4.chunk.js.LICENSE.txt": "/julia30040.github.io/static/js/2.ec43d7b4.chunk.js.LICENSE.txt",
@@ -34,6 +34,6 @@
     "static/js/runtime-main.fb74d0a5.js",
     "static/js/2.ec43d7b4.chunk.js",
     "static/css/main.676661b8.chunk.css",
-    "static/js/main.10a58e77.chunk.js"
+    "static/js/main.9336dd24.chunk.js"
   ]
 }
