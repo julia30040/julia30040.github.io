@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ab7fd7aa91d1bd0492b9332f8cda5091",
+    "revision": "dee6eba9277297af6f6bcf630d769ecf",
     "url": "/julia30040.github.io/index.html"
   },
   {
-    "revision": "283beddc8f9ea0cf96a7",
+    "revision": "e7707b0488af68ebbf23",
     "url": "/julia30040.github.io/static/css/main.676661b8.chunk.css"
   },
   {
-    "revision": "578e88a92a8b17129ce7",
-    "url": "/julia30040.github.io/static/js/2.ec43d7b4.chunk.js"
+    "revision": "e6ef71e2b0b76cb2f0ff",
+    "url": "/julia30040.github.io/static/js/2.4b8c636a.chunk.js"
   },
   {
     "revision": "3207f14dccb71af9d76886b742f5369f",
-    "url": "/julia30040.github.io/static/js/2.ec43d7b4.chunk.js.LICENSE.txt"
+    "url": "/julia30040.github.io/static/js/2.4b8c636a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "283beddc8f9ea0cf96a7",
-    "url": "/julia30040.github.io/static/js/main.2fa4f40a.chunk.js"
+    "revision": "e7707b0488af68ebbf23",
+    "url": "/julia30040.github.io/static/js/main.fad303bf.chunk.js"
   },
   {
     "revision": "a1c5acafe220a7e4b77e",
@@ -74,6 +74,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0fca0e0b3cf4a4f45f1a80c7b9bea7a5",
     "url": "/julia30040.github.io/static/media/morning_sea_wave.0fca0e0b.mp3"
+  },
+  {
+    "revision": "56af0d90b77e81ceac0a948db93cd6ef",
+    "url": "/julia30040.github.io/static/media/president.56af0d90.png"
   },
   {
     "revision": "f928283353b9a885042494ece628e558",
