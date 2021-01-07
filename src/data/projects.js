@@ -17,15 +17,58 @@ import geesaa_6 from '../media/img/geesaa_6.jpg';
 import geesaa_7 from '../media/img/geesaa_7.jpg';
 import geesaa_8 from '../media/img/geesaa_8.jpg';
 import president from '../media/img/president.png';
+import cookTheVibe from '../media/img/cook_the_vibe.jpg';
 
 export default [{
+    title: '顏社煮場秀 Cook the Vibe',
+    cover: {
+        url: cookTheVibe,
+        backgroundColor: '#1942ff',
+    },
+    types: [FORESTAGE_WEB],
+    description: '',
+    credits: [{
+        label: 'Developer',
+        value: 'Julia Wang',
+    }, {
+        label: 'Assistant Developer',
+        value: 'Elroy Tsai/ Evan Yang',
+    }, {
+        label: 'Designer',
+        value: 'Ellen Feng/ Lee Ming',
+    }, {
+        label: 'Creative Director',
+        value: 'Lee Ming'
+    }],
+    tags: [
+        'Vue.js',
+        'GSAP ScrollTrigger',
+        'PHP',
+    ],
+    websiteLink: 'https://cookthevibe.com/',
+    appLink: null,
+    year: '2020',
+}, {
     title: '總統聊天室',
     cover: {
         url: president,
         backgroundColor: '#ffffff',
     },
     types: [FORESTAGE_WEB],
-    description: '2020 台灣總統選舉，當時任職的公司（版塊）因此製作了「總統聊天室」這個網站，透過仿聊天室的問答方式，讓使用者進一步了解自己對總統參選人的價值觀、政策的傾向。\n\n此網站功能主要是「仿聊天室問答」，每個題目有兩個選項，分別代表不同參選人的價值觀與政策傾向，在問答結束後，可查看統計結果、問答資料來源。此仿聊天室問答的製作中，為了模擬較自然的對答過程，參選人會在不特定的範圍時間內針對你的選擇有不同回覆。\n動態特效方面有兩項重點：3D 模型嵌入與操控場景、emoji 貼圖噴發。這兩個都是使用 Three.js 製作。\nCredits\nDevloper — Julia Wang\nAssistant Developer — Jeff Cho\n Information Collect — Ellen Feng\nDesigner — Lee Ming, Luju Lu',
+    description: '2020 台灣總統選舉，當時任職的公司（版塊）因此製作了「總統聊天室」這個網站，透過仿聊天室的問答方式，讓使用者進一步了解自己對總統參選人的價值觀、政策的傾向。\n\n此網站功能主要是「仿聊天室問答」，每個題目有兩個選項，分別代表不同參選人的價值觀與政策傾向，在問答結束後，可查看統計結果、問答資料來源。此仿聊天室問答的製作中，為了模擬較自然的對答過程，參選人會在不特定的範圍時間內針對你的選擇有不同回覆。\n動態特效方面有兩項重點：3D 模型嵌入與操控場景、emoji 貼圖噴發。這兩個都是使用 Three.js 製作。',
+    credits: [{
+        label: 'Developer',
+        value: 'Julia Wang',
+    }, {
+        label: 'Assistant Developer',
+        value: 'Jeff Cho',
+    }, {
+        label: 'Information Collect',
+        value: 'Ellen Feng',
+    }, {
+        label: 'Designer',
+        value: 'Lee Ming/ Luju Lu',
+    }],
     tags: [
         'Vue.js',
         'Three.js',
