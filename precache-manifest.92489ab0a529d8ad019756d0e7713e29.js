@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "84aaadaf928f5faf27ba5ddd8fe2fc62",
+    "revision": "e15b0ac74938b2be4ec8a0920c1505c5",
     "url": "/julia30040.github.io/index.html"
   },
   {
-    "revision": "198bad8b7363bd812d98",
+    "revision": "fceac6aac2dc91fe51bf",
     "url": "/julia30040.github.io/static/css/main.676661b8.chunk.css"
   },
   {
-    "revision": "e6ef71e2b0b76cb2f0ff",
-    "url": "/julia30040.github.io/static/js/2.4b8c636a.chunk.js"
+    "revision": "a28dca1869e4c1844fa1",
+    "url": "/julia30040.github.io/static/js/2.fde9bb3f.chunk.js"
   },
   {
     "revision": "3207f14dccb71af9d76886b742f5369f",
-    "url": "/julia30040.github.io/static/js/2.4b8c636a.chunk.js.LICENSE.txt"
+    "url": "/julia30040.github.io/static/js/2.fde9bb3f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "198bad8b7363bd812d98",
-    "url": "/julia30040.github.io/static/js/main.6053a63e.chunk.js"
+    "revision": "fceac6aac2dc91fe51bf",
+    "url": "/julia30040.github.io/static/js/main.3dffe05c.chunk.js"
   },
   {
     "revision": "a1c5acafe220a7e4b77e",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "52e4e9229e90b3b4095b2165a1fed44d",
     "url": "/julia30040.github.io/static/media/ccu_mis_logo.52e4e922.png"
+  },
+  {
+    "revision": "bb70ce41406bb11b151d78cc4442ef3c",
+    "url": "/julia30040.github.io/static/media/cook_the_vibe.bb70ce41.jpg"
   },
   {
     "revision": "e2190307abb961bc832378fa5e0b9e30",
