@@ -13,7 +13,7 @@ const styles = {
     margin: '0 0 32px',
   },
   a: {
-    color: '#9bd386',
+    color: '#dbff38',
     textDecoration: 'none',
     wordBreak: 'keep-all',
   },

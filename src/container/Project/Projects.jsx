@@ -7,11 +7,14 @@ import projects from '../../data/projects.js';
 
 const styles = {
   wrapper: {
+    position: 'relative',
     display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
+    flexWrap: 'wrap',
     width: '100%',
     overflowX: 'visible',
+    marginTop: 16,
     '@media screen and (max-width: 767px)': {
       flexDirection: 'column',
       alignItems: 'center',

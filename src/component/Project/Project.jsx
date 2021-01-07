@@ -40,8 +40,17 @@ const styles = {
       transform: 'translateY(-10px)'
     },
   },
-  coverWrapper: {
+  activedWrapper: {
+    opacity: 1,
+    ':hover': {
+        transform: 'none',
+    }
+  },
+  projectInfo: {
     width: 150,
+  },
+  coverWrapper: {
+    width: '100%',
     height: 150,
     padding: 6,
     borderRadius: 4,
@@ -66,8 +75,20 @@ const styles = {
     letterSpacing: 1,
     margin: 0,
   },
+  linkWrapper: {
+    marginTop: 8,
+    display: 'inline-block',
+    background: '#81b2e9',
+    padding: '0px 4px',
+    transition: 'transform .3s cubic-bezier(0.75, -1.27, 0.3, 2.33)',
+    transformOrigin: 'left',
+    ':hover': {
+        transform: 'scaleX(1.3)',
+    },
+  },
   detailWrapper: {
-    margin: '15px 0 0 32px',
+    margin: '0 0 0 32px',
+    padding: '15px 0 60px',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',
@@ -79,9 +100,9 @@ const styles = {
   description: {
     fontSize: 15,
     letterSpacing: 1,
-    color: '#e3d5b2',
     margin: '0 0 15px',
-    textShadow: '1px 1px #6f6f6f',
+    color: '#fff',
+    textShadow: '#3d606a 1px 1px'
   },
   tag: {
     fontSize: 13,
@@ -115,8 +136,22 @@ const styles = {
     WebkitTextStroke: '1px #fff',
     fontSize: 32,
   },
-  isActived: {
-    opacity: 1,
+  credit: {
+      color: '#ffc14c',
+      lineHeight: '1.57',
+  },
+  creditTitle: {
+      fontSize: 18,
+      fontWeight: 600,
+  },
+  creditLabel: {
+    display: 'inline-block',
+  },
+  creditSeparator: {
+    margin: '0 5px',  
+  },
+  creditValue: {
+ 
   },
 };
 
@@ -143,9 +178,9 @@ class Project extends PureComponent {
           onClick={() => onClickProject(project.id)}
           style={[
             styles.wrapper,
-            isActived && styles.isActived,
+            isActived && styles.activedWrapper,
           ]}>
-          <MouseEventHook isWrapText={false}>
+          <MouseEventHook isWrapText={false} style={styles.projectInfo}>
             <div style={styles.coverWrapper}>
               <div
                 style={[
@@ -154,13 +189,13 @@ class Project extends PureComponent {
                     backgroundImage: `url(${project.cover.url || project.cover})`,
                     backgroundColor: project.cover.backgroundColor,
                   },
-                ]} />
-              </div>
-              <h3 style={styles.title}>{project.title}</h3>
-              <h5 style={styles.subtitle}>{project.subtitle}</h5>
-              <h5 style={styles.subtitle}>{project.year}</h5>
-              {isActived ? (
-                <Fragment>
+                ]}></div>
+            </div>
+            <h3 style={styles.title}>{project.title}</h3>
+            <h5 style={styles.subtitle}>{project.subtitle}</h5>
+            <h5 style={styles.subtitle}>{project.year}</h5>
+            {isActived ? (
+                <div style={styles.linkWrapper}>
                     {project.websiteLink ? (
                         <LineEffectLink href={project.websiteLink}>+ view website</LineEffectLink>
                     ) : null}
@@ -170,8 +205,8 @@ class Project extends PureComponent {
                     {project.relatedLink ? (
                         <LineEffectLink href={project.relatedLink}>+ see more</LineEffectLink>
                     ) : null}
-                </Fragment>
-              ) : null}
+                </div>
+            ) : null}
           </MouseEventHook>
         </div>
         {isActived ? (
@@ -195,6 +230,18 @@ class Project extends PureComponent {
               {project.media ? (
                 <ProjectMedia media={project.media} />
               ) : null}
+              {project.credits ? (
+                  <div style={styles.credit}>
+                      <span style={styles.creditTitle}>Credits</span>
+                      {project.credits.map((credit, index) => (
+                          <div key={`credit-${index}`}>
+                              <span style={styles.creditLabel}>{credit.label}</span>
+                              <span style={styles.creditSeparator}>—</span>
+                              <span style={styles.creditValue}>{credit.value}</span>
+                          </div>
+                      ))}
+                  </div>
+              ): null}
           </div>
         ) : null}
         {isActived ? (
