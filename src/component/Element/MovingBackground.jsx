@@ -68,7 +68,7 @@ class MovingBackground extends PureComponent<Props, State> {
     }
   }
 
-  componentWillUnMount() {
+  componentWillUnmount() {
     this.background.removeEventListener();
   }
 
