@@ -35,7 +35,7 @@ function Info() {
         、種植物、打羽球；觀察社會現象，盡力以客觀角度了解事件。
       </p>
       <p style={styles.description}>
-        familiar with ReactJS, ReactNative, CSS
+        familiar with ReactJS, CSS
       </p>
       <p style={styles.description}>
         julia135793@gmail.com<br />

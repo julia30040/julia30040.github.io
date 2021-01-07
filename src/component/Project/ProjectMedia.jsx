@@ -132,7 +132,6 @@ class ProjectMedia extends PureComponent<State, Props> {
                 ]} />
             ) : null)}
           </div>
-          <button style={styles.closeBtn}>x</button>
         </div>
       </MouseEventHook>
     );

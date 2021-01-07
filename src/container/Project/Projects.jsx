@@ -32,12 +32,17 @@ class Projects extends PureComponent <State> {
     const { activedProjectId } = this.state;
     return (
       <div style={styles.wrapper}>
-        {projects.map((project, index) => {
+        {projects.map((p, pIndex) => {
+            return {
+                ...p,
+                id: pIndex + 1,
+            }
+        }).map((project, index) => {
           if (activedProjectId !== null && activedProjectId !== project.id) return null;
 
           return (
             <Project
-              key={project.id}
+              key={`project-${index}`}
               project={project}
               isActived={project.id === activedProjectId}
               onClickProject={projectId => this.setState({ activedProjectId: projectId }) }

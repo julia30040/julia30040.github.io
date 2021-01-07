@@ -1,6 +1,6 @@
 // @flow
 
-import React, { PureComponent } from 'react';
+import React, { Fragment, PureComponent } from 'react';
 import radium from 'radium';
 import _ from 'lodash';
 import MouseEventHook from '../Element/MouseEventHook.jsx';
@@ -81,6 +81,7 @@ const styles = {
     letterSpacing: 1,
     color: '#e3d5b2',
     margin: '0 0 15px',
+    textShadow: '1px 1px #6f6f6f',
   },
   tag: {
     fontSize: 13,
@@ -150,13 +151,27 @@ class Project extends PureComponent {
                 style={[
                   styles.cover,
                   {
-                    backgroundImage: `url(${project.cover})`
+                    backgroundImage: `url(${project.cover.url || project.cover})`,
+                    backgroundColor: project.cover.backgroundColor,
                   },
                 ]} />
               </div>
               <h3 style={styles.title}>{project.title}</h3>
               <h5 style={styles.subtitle}>{project.subtitle}</h5>
               <h5 style={styles.subtitle}>{project.year}</h5>
+              {isActived ? (
+                <Fragment>
+                    {project.websiteLink ? (
+                        <LineEffectLink href={project.websiteLink}>+ view website</LineEffectLink>
+                    ) : null}
+                    {project.appLink ? (
+                        <LineEffectLink href={project.appLink}>+ view app</LineEffectLink>
+                    ) : null}
+                    {project.relatedLink ? (
+                        <LineEffectLink href={project.relatedLink}>+ see more</LineEffectLink>
+                    ) : null}
+                </Fragment>
+              ) : null}
           </MouseEventHook>
         </div>
         {isActived ? (
@@ -179,15 +194,6 @@ class Project extends PureComponent {
               ) : null}
               {project.media ? (
                 <ProjectMedia media={project.media} />
-              ) : null}
-              {project.websiteLink ? (
-                <LineEffectLink href={project.websiteLink}>+ view website</LineEffectLink>
-              ) : null}
-              {project.appLink ? (
-                <LineEffectLink href={project.appLink}>+ view app</LineEffectLink>
-              ) : null}
-              {project.relatedLink ? (
-                <LineEffectLink href={project.relatedLink}>+ see more</LineEffectLink>
               ) : null}
           </div>
         ) : null}
