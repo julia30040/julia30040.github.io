@@ -1,6 +1,6 @@
 // @flow
 
-import React, { Fragment, PureComponent } from 'react';
+import React, {  PureComponent } from 'react';
 import radium from 'radium';
 import _ from 'lodash';
 import MouseEventHook from '../Element/MouseEventHook.jsx';
