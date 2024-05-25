@@ -28,7 +28,7 @@ const styles = {
 function Info() {
   return (
     <div style={styles.wrapper}>
-      <h2 style={styles.h2}>I'm Julia 王心瑀, a front-end developer based in Taiwan.</h2>
+      <h2 style={styles.h2}>I'm Julia, a front-end developer based in Taiwan.</h2>
       <p style={styles.description}>
         擅長 JavaScript 及 CSS 互動，讓生活變得更簡單更有趣。興趣是聽獨立音樂彈吉他、蒐集
         <LineEffectLink href="https://soundcloud.com/musicdiary_tw">生活中的聲音</LineEffectLink>
@@ -38,8 +38,7 @@ function Info() {
         familiar with ReactJS, CSS
       </p>
       <p style={styles.description}>
-        julia135793@gmail.com<br />
-        +886 906152406
+        julia135793@gmail.com
       </p>
       <div style={styles.row}>
         <LinkIcon
