@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c48a037644fe2e1c7f80315d38b4233e",
+    "revision": "78fcc91c1cfb84b74259cd049ece2944",
     "url": "/julia30040.github.io/index.html"
   },
   {
-    "revision": "d97a8f025a39b549a938",
+    "revision": "80f167c4a1f630ffc37f",
     "url": "/julia30040.github.io/static/css/main.676661b8.chunk.css"
   },
   {
-    "revision": "984f4c9736713a1d4de9",
-    "url": "/julia30040.github.io/static/js/2.21a100b2.chunk.js"
+    "revision": "93e978b0a4b9d3bb963b",
+    "url": "/julia30040.github.io/static/js/2.1e0cdb3b.chunk.js"
   },
   {
-    "revision": "3207f14dccb71af9d76886b742f5369f",
-    "url": "/julia30040.github.io/static/js/2.21a100b2.chunk.js.LICENSE.txt"
+    "revision": "e4dc4f2e5a2378811b3cc51326303440",
+    "url": "/julia30040.github.io/static/js/2.1e0cdb3b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d97a8f025a39b549a938",
-    "url": "/julia30040.github.io/static/js/main.e02fa5c7.chunk.js"
+    "revision": "80f167c4a1f630ffc37f",
+    "url": "/julia30040.github.io/static/js/main.da81acbd.chunk.js"
   },
   {
     "revision": "f505e1c7708396ee2544",
     "url": "/julia30040.github.io/static/js/runtime-main.652b5f44.js"
   },
   {
-    "revision": "dde5659aaa6efc009d54febdcd6f4415",
-    "url": "/julia30040.github.io/static/media/avatar.dde5659a.png"
+    "revision": "491f50b4ebb0bd8a0d2a81d93b220e65",
+    "url": "/julia30040.github.io/static/media/avatar-sea.491f50b4.JPG"
   },
   {
     "revision": "52e4e9229e90b3b4095b2165a1fed44d",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e2190307abb961bc832378fa5e0b9e30",
     "url": "/julia30040.github.io/static/media/eatme_logo.e2190307.jpg"
+  },
+  {
+    "revision": "2c2b07aae20ba6d004a4d3a9d47b539e",
+    "url": "/julia30040.github.io/static/media/fuji.2c2b07aa.JPG"
   },
   {
     "revision": "89057c45dec11b73ef3b6e2ac56f303c",
@@ -82,10 +86,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "56af0d90b77e81ceac0a948db93cd6ef",
     "url": "/julia30040.github.io/static/media/president.56af0d90.png"
-  },
-  {
-    "revision": "f928283353b9a885042494ece628e558",
-    "url": "/julia30040.github.io/static/media/sea_2.f9282833.JPG"
   },
   {
     "revision": "4c6882adc0e07b980094341b01a52dff",

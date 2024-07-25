@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/julia30040.github.io/static/css/main.676661b8.chunk.css",
-    "main.js": "/julia30040.github.io/static/js/main.e02fa5c7.chunk.js",
-    "main.js.map": "/julia30040.github.io/static/js/main.e02fa5c7.chunk.js.map",
+    "main.js": "/julia30040.github.io/static/js/main.da81acbd.chunk.js",
+    "main.js.map": "/julia30040.github.io/static/js/main.da81acbd.chunk.js.map",
     "runtime-main.js": "/julia30040.github.io/static/js/runtime-main.652b5f44.js",
     "runtime-main.js.map": "/julia30040.github.io/static/js/runtime-main.652b5f44.js.map",
-    "static/js/2.21a100b2.chunk.js": "/julia30040.github.io/static/js/2.21a100b2.chunk.js",
-    "static/js/2.21a100b2.chunk.js.map": "/julia30040.github.io/static/js/2.21a100b2.chunk.js.map",
+    "static/js/2.1e0cdb3b.chunk.js": "/julia30040.github.io/static/js/2.1e0cdb3b.chunk.js",
+    "static/js/2.1e0cdb3b.chunk.js.map": "/julia30040.github.io/static/js/2.1e0cdb3b.chunk.js.map",
     "index.html": "/julia30040.github.io/index.html",
-    "precache-manifest.05136af16f48904299ffa938142b1121.js": "/julia30040.github.io/precache-manifest.05136af16f48904299ffa938142b1121.js",
+    "precache-manifest.4e673e24e1651006bad853b56230edd2.js": "/julia30040.github.io/precache-manifest.4e673e24e1651006bad853b56230edd2.js",
     "service-worker.js": "/julia30040.github.io/service-worker.js",
     "static/css/main.676661b8.chunk.css.map": "/julia30040.github.io/static/css/main.676661b8.chunk.css.map",
-    "static/js/2.21a100b2.chunk.js.LICENSE.txt": "/julia30040.github.io/static/js/2.21a100b2.chunk.js.LICENSE.txt",
-    "static/media/avatar.png": "/julia30040.github.io/static/media/avatar.dde5659a.png",
+    "static/js/2.1e0cdb3b.chunk.js.LICENSE.txt": "/julia30040.github.io/static/js/2.1e0cdb3b.chunk.js.LICENSE.txt",
+    "static/media/avatar-sea.JPG": "/julia30040.github.io/static/media/avatar-sea.491f50b4.JPG",
     "static/media/ccu_mis_logo.png": "/julia30040.github.io/static/media/ccu_mis_logo.52e4e922.png",
     "static/media/cook_the_vibe.jpg": "/julia30040.github.io/static/media/cook_the_vibe.bb70ce41.jpg",
     "static/media/eatme_logo.jpg": "/julia30040.github.io/static/media/eatme_logo.e2190307.jpg",
+    "static/media/fuji.JPG": "/julia30040.github.io/static/media/fuji.2c2b07aa.JPG",
     "static/media/geesaa_1.PNG": "/julia30040.github.io/static/media/geesaa_1.89057c45.PNG",
     "static/media/geesaa_2.PNG": "/julia30040.github.io/static/media/geesaa_2.a1a56856.PNG",
     "static/media/geesaa_3.PNG": "/julia30040.github.io/static/media/geesaa_3.63d44d76.PNG",
@@ -27,13 +28,12 @@
     "static/media/geesaa_logo.png": "/julia30040.github.io/static/media/geesaa_logo.ba297bed.png",
     "static/media/morning_sea_wave.mp3": "/julia30040.github.io/static/media/morning_sea_wave.0fca0e0b.mp3",
     "static/media/president.png": "/julia30040.github.io/static/media/president.56af0d90.png",
-    "static/media/sea_2.JPG": "/julia30040.github.io/static/media/sea_2.f9282833.JPG",
     "static/media/sea_2_sm.JPG": "/julia30040.github.io/static/media/sea_2_sm.4c6882ad.JPG"
   },
   "entrypoints": [
     "static/js/runtime-main.652b5f44.js",
-    "static/js/2.21a100b2.chunk.js",
+    "static/js/2.1e0cdb3b.chunk.js",
     "static/css/main.676661b8.chunk.css",
-    "static/js/main.e02fa5c7.chunk.js"
+    "static/js/main.da81acbd.chunk.js"
   ]
 }
