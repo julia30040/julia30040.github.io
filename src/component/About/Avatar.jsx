@@ -1,7 +1,7 @@
 // @flow
 import React, { PureComponent } from 'react';
 import radium from 'radium';
-import avatarImage from '../../media/img/avatar.png';
+import avatarImage from '../../media/img/avatar-sea.JPG';
 
 const styles = {
   wrapper: {
