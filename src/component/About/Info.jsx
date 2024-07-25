@@ -30,23 +30,26 @@ function Info() {
     <div style={styles.wrapper}>
       <h2 style={styles.h2}>I'm Julia, a front-end developer based in Taiwan.</h2>
       <p style={styles.description}>
-        擅長 JavaScript 及 CSS 互動，讓生活變得更簡單更有趣。興趣是聽獨立音樂彈吉他、蒐集
-        <LineEffectLink href="https://soundcloud.com/musicdiary_tw">生活中的聲音</LineEffectLink>
-        、種植物、打羽球；觀察社會現象，盡力以客觀角度了解事件。
+        擅長 JavaScript 及 CSS 互動，讓生活變得更簡單更有趣。
       </p>
       <p style={styles.description}>
-        familiar with ReactJS, CSS
+        興趣是打羽球、種植物、旅行，喜歡彈吉他唱歌，久久會<LineEffectLink href="https://www.instagram.com/ayu_guitarlife/">錄個 cover</LineEffectLink>，蒐集<LineEffectLink href="https://soundcloud.com/musicdiary_tw">生活中的聲音</LineEffectLink>。
+      </p>
+      <p style={styles.description}>
+        育有一隻八字眉貓咪叫做畢魯，
+        <br />
+        歡迎追蹤 <LineEffectLink href="https://www.instagram.com/birucat4wo/">@birucat4wo</LineEffectLink> (๑•̀ㅂ•́)و✧
       </p>
       <p style={styles.description}>
         julia135793@gmail.com
       </p>
       <div style={styles.row}>
         <LinkIcon
-          iconClass="fab fa-codepen"
-          url="https://codepen.io/julia135793/" />
-        <LinkIcon
           iconClass="fab fa-github"
           url="https://github.com/julia30040" />
+        <LinkIcon
+          iconClass="fab fa-codepen"
+          url="https://codepen.io/julia135793/" />
       </div>
     </div>
   );

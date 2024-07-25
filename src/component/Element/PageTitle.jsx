@@ -14,7 +14,7 @@ const styles = {
     transition: 'all 0.24s ease-in',
     WebkitTextStroke: '1px rgba(255, 255, 255, 0.9)',
     fontSize: 128,
-    margin: 0,
+    margin: '0 0 32px 0',
     '@media screen and (max-width: 767px)': {
       fontSize: '3em',
       margin: '32px 0',
