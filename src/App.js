@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import debug from "debug";
 import radium, { StyleRoot } from "radium";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./container/Header.jsx";
 import MainBoard from "./container/MainBoard.jsx";
 import MovingBackground from "./component/Element/MovingBackground.jsx";
@@ -24,18 +24,22 @@ const styles = {
 
 class App extends Component {
   render() {
+    const params = new URLSearchParams(window.location.search);
+    const isWeddingPage = params.get("wedding") === "true";
+
     return (
       <StyleRoot style={styles.fullHeight}>
         <Router>
           <div style={[styles.wrapper, styles.fullHeight]}>
-            <Switch>
-              <Route exact path="/wedding/" component={WeddingPage} />
-              <Route>
+            {isWeddingPage ? (
+              <WeddingPage />
+            ) : (
+              <>
                 <MovingBackground url={seaImage} smSizeURL={seaImageSm} />
                 <Header />
                 <MainBoard />
-              </Route>
-            </Switch>
+              </>
+            )}
           </div>
         </Router>
       </StyleRoot>
