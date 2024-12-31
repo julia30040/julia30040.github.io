@@ -71,6 +71,7 @@ const styles = {
     color: '#6B6762',
     fontSize: 16,
     lineHeight: 1.5,
+    textAlign: 'center',
     position: 'relative',
     zIndex: 1,
   },
@@ -90,6 +91,12 @@ const styles = {
   flowerAnimationImage: {
     width: 163,
   },
+  footer: {
+    fontSize: 16,
+    color: '#000',
+    textAlign: 'center',
+    margin: '16px 0',
+  }
 };
 
 class WeddingPage extends PureComponent {
@@ -104,18 +111,13 @@ class WeddingPage extends PureComponent {
           <div style={styles.invitation}>
             <img style={styles.invitationTitle} src={invitationTitleImageURL} />
             <p style={styles.invitationDescription}>
-              Dear, 謝謝您打開這個表單！<br/>
-              大學至今相識12年的時間，我們將於桃園舉辦婚宴。<br/>
-              邀請彼此的家人好朋友們來相聚 💚<br/>
+              親愛的, 謝謝您打開這份邀請函。<br/>
+              誠摯的邀請您前來參加我們的婚禮派對🎊<br/>
               <br/>
-              📍 地點：桃園 Honey Wood Cafe<br/>
-              桃園市平鎮區復旦路四段116巷51號<br/>
-              🕚️ 時間：<br/>2025年5月3日 (六) 11:30 入場，12:00 準時開席。<br/>
+              西餐x草原x祝福<br/>
+              期待看到你們 ❤️ OXOX<br/>
               <br/>
-              誠摯的邀請你參加我們的婚禮派對 🎊<br/>
-              不論是否能到現場，都期待您能回覆表單或是給予我們祝福 :)<br/>
-              <br/>
-              謝謝您！<br/>
+              -下滑看詳細資訊-<br/>
             </p>
             <p style={styles.invitationName}>Jay & Jane</p>
             <img style={styles.invitationDeco} src={ribbonsImageURL} />
@@ -124,7 +126,8 @@ class WeddingPage extends PureComponent {
           <GallerySection />
           <HowToComeSection />
         </div>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2Q_Zczeh7DTeOn3Lqhdl2ZHKvsDQy_W_tbK0dIff-6Bp2mg/viewform?embedded=true" width="100%" height="3200" frameborder="0" marginheight="0" marginwidth="0">載入中，請稍等</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2Q_Zczeh7DTeOn3Lqhdl2ZHKvsDQy_W_tbK0dIff-6Bp2mg/viewform?embedded=true" width="100%" height="3000" frameborder="0" marginheight="0" marginwidth="0">載入中，請稍等</iframe>
+        <footer style={styles.footer}>made by love © 2024 julia4wo.com</footer>
       </div>
     );
   }

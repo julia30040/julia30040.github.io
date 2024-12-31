@@ -27,7 +27,6 @@ const ImageGallery = ({ images }) => {
         <LightGallery
             style={styles.gallery}
             plugins={[lgThumbnail]}
-            onInit={onInit}
             speed={500}
             elementClassNames="wedding-light-gallery"
             backgroundColor="rgba(0, 0, 0, 0.65)"
