@@ -1,12 +1,15 @@
 // @flow
 import React, { PureComponent } from 'react';
 import radium from 'radium';
+import ImageGallery from './ImageGallery'
+
 import bgImageURL from './assets/paper-bg.jpg'
 import coverImageURL from './assets/cover-2.jpg'
 import coverTitleImageURL from './assets/cover-title.png'
 import invitationTitleImageURL from './assets/invitation-title.png'
 import ribbonsImageURL from './assets/ribbons.svg'
 import flowerAnimationImageURL from './assets/flower-animation.gif'
+import GallerySection from './GallerySection';
 
 const styles = {
   wrapper: {
@@ -117,6 +120,7 @@ class WeddingPage extends PureComponent {
             <img style={styles.invitationDeco} src={ribbonsImageURL} />
           </div>
           <img src={flowerAnimationImageURL} style={styles.flowerAnimationImage} />
+          <GallerySection />
         </div>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2Q_Zczeh7DTeOn3Lqhdl2ZHKvsDQy_W_tbK0dIff-6Bp2mg/viewform?embedded=true" width="100%" height="3200" frameborder="0" marginheight="0" marginwidth="0">載入中，請稍等</iframe>
       </div>

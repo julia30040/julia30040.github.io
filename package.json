@@ -7,6 +7,7 @@
     "babel-preset-react-app": "^3.1.2",
     "gh-pages": "^2.0.1",
     "howler": "^2.1.1",
+    "lightgallery": "^2.8.2",
     "radium": "^0.25.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
@@ -32,7 +33,6 @@
   ],
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/julia30040/julia30040.github.io.git"
