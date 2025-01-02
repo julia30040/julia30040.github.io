@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1eff5f9b1cad91d0d101b2a7059a3aca",
+    "revision": "6c352fd76c5cb47004a9e0d3f24360b9",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.1e333cb4.chunk.css"
   },
   {
-    "revision": "5f9abf2befcd639074fd",
+    "revision": "ae3f639b62b4525eddde",
     "url": "/static/css/main.a5c89637.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.1b900e9d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5f9abf2befcd639074fd",
-    "url": "/static/js/main.7724c90b.chunk.js"
+    "revision": "ae3f639b62b4525eddde",
+    "url": "/static/js/main.e2ba7e25.chunk.js"
   },
   {
     "revision": "430f72daf7c3a4d42642",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/cook_the_vibe.bb70ce41.jpg"
   },
   {
-    "revision": "287b79efb662eeeae23800388455c288",
-    "url": "/static/media/cover-3.287b79ef.jpg"
+    "revision": "35fb1fc1570bd72b093108699707edf5",
+    "url": "/static/media/cover-3.35fb1fc1.jpg"
   },
   {
     "revision": "a463577b503d6cec8fcd1d06de20044b",
@@ -116,8 +116,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/morning_sea_wave.0fca0e0b.mp3"
   },
   {
-    "revision": "5c2adb473cfedb9395b13097cdb83485",
-    "url": "/static/media/paper-bg.5c2adb47.jpg"
+    "revision": "fa7f136df118c5152e872a4f6c91d1bc",
+    "url": "/static/media/paper-bg.fa7f136d.jpg"
   },
   {
     "revision": "6e7066bf834b078558ff6b07dbfd61f1",

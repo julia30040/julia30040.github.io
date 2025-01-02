@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.a5c89637.chunk.css",
-    "main.js": "/static/js/main.7724c90b.chunk.js",
-    "main.js.map": "/static/js/main.7724c90b.chunk.js.map",
+    "main.js": "/static/js/main.e2ba7e25.chunk.js",
+    "main.js.map": "/static/js/main.e2ba7e25.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.351e9c47.js",
     "runtime-main.js.map": "/static/js/runtime-main.351e9c47.js.map",
     "static/css/2.1e333cb4.chunk.css": "/static/css/2.1e333cb4.chunk.css",
     "static/js/2.1b900e9d.chunk.js": "/static/js/2.1b900e9d.chunk.js",
     "static/js/2.1b900e9d.chunk.js.map": "/static/js/2.1b900e9d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1c8454b3c65340f3602871f27c73582b.js": "/precache-manifest.1c8454b3c65340f3602871f27c73582b.js",
+    "precache-manifest.68eef4e9f4ca45be56e234bf6898cd7a.js": "/precache-manifest.68eef4e9f4ca45be56e234bf6898cd7a.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.1e333cb4.chunk.css.map": "/static/css/2.1e333cb4.chunk.css.map",
     "static/css/main.a5c89637.chunk.css.map": "/static/css/main.a5c89637.chunk.css.map",
@@ -17,7 +17,7 @@
     "static/media/avatar-sea.JPG": "/static/media/avatar-sea.491f50b4.JPG",
     "static/media/ccu_mis_logo.png": "/static/media/ccu_mis_logo.52e4e922.png",
     "static/media/cook_the_vibe.jpg": "/static/media/cook_the_vibe.bb70ce41.jpg",
-    "static/media/cover-3.jpg": "/static/media/cover-3.287b79ef.jpg",
+    "static/media/cover-3.jpg": "/static/media/cover-3.35fb1fc1.jpg",
     "static/media/cover-title.png": "/static/media/cover-title.a463577b.png",
     "static/media/eatme_logo.jpg": "/static/media/eatme_logo.e2190307.jpg",
     "static/media/flower-animation.gif": "/static/media/flower-animation.53ebd1b6.gif",
@@ -33,7 +33,7 @@
     "static/media/geesaa_logo.png": "/static/media/geesaa_logo.ba297bed.png",
     "static/media/lightgallery.css": "/static/media/lg.db9f4533.svg",
     "static/media/morning_sea_wave.mp3": "/static/media/morning_sea_wave.0fca0e0b.mp3",
-    "static/media/paper-bg.jpg": "/static/media/paper-bg.5c2adb47.jpg",
+    "static/media/paper-bg.jpg": "/static/media/paper-bg.fa7f136d.jpg",
     "static/media/photo-1-m.jpeg": "/static/media/photo-1-m.6e7066bf.jpeg",
     "static/media/photo-1.jpg": "/static/media/photo-1.1c4a241e.jpg",
     "static/media/photo-10-m.jpeg": "/static/media/photo-10-m.7ce0efe9.jpeg",
@@ -67,6 +67,6 @@
     "static/css/2.1e333cb4.chunk.css",
     "static/js/2.1b900e9d.chunk.js",
     "static/css/main.a5c89637.chunk.css",
-    "static/js/main.7724c90b.chunk.js"
+    "static/js/main.e2ba7e25.chunk.js"
   ]
 }
