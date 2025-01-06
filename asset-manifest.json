@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.ac5fe29d.chunk.css",
-    "main.js": "/static/js/main.51033a86.chunk.js",
-    "main.js.map": "/static/js/main.51033a86.chunk.js.map",
+    "main.js": "/static/js/main.c4a274d4.chunk.js",
+    "main.js.map": "/static/js/main.c4a274d4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.351e9c47.js",
     "runtime-main.js.map": "/static/js/runtime-main.351e9c47.js.map",
     "static/css/2.d470d2ea.chunk.css": "/static/css/2.d470d2ea.chunk.css",
-    "static/js/2.bf0196b1.chunk.js": "/static/js/2.bf0196b1.chunk.js",
-    "static/js/2.bf0196b1.chunk.js.map": "/static/js/2.bf0196b1.chunk.js.map",
+    "static/js/2.97a0d300.chunk.js": "/static/js/2.97a0d300.chunk.js",
+    "static/js/2.97a0d300.chunk.js.map": "/static/js/2.97a0d300.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a4517933b9aa7019dd7e9dc4b20e0efb.js": "/precache-manifest.a4517933b9aa7019dd7e9dc4b20e0efb.js",
+    "precache-manifest.1565c68746b6aa837f910171f375e2c4.js": "/precache-manifest.1565c68746b6aa837f910171f375e2c4.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.d470d2ea.chunk.css.map": "/static/css/2.d470d2ea.chunk.css.map",
     "static/css/main.ac5fe29d.chunk.css.map": "/static/css/main.ac5fe29d.chunk.css.map",
-    "static/js/2.bf0196b1.chunk.js.LICENSE.txt": "/static/js/2.bf0196b1.chunk.js.LICENSE.txt",
+    "static/js/2.97a0d300.chunk.js.LICENSE.txt": "/static/js/2.97a0d300.chunk.js.LICENSE.txt",
     "static/media/avatar-sea.JPG": "/static/media/avatar-sea.491f50b4.JPG",
     "static/media/ccu_mis_logo.png": "/static/media/ccu_mis_logo.52e4e922.png",
     "static/media/cook_the_vibe.jpg": "/static/media/cook_the_vibe.bb70ce41.jpg",
@@ -55,18 +55,6 @@
     "static/media/photo-4-m.jpeg": "/static/media/photo-4-m.797b86d7.jpeg",
     "static/media/photo-4-sm.jpeg": "/static/media/photo-4-sm.f3fd0126.jpeg",
     "static/media/photo-4.jpg": "/static/media/photo-4.c7a96cc1.jpg",
-    "static/media/photo-5-m.jpeg": "/static/media/photo-5-m.6ca91cbb.jpeg",
-    "static/media/photo-5-sm.jpeg": "/static/media/photo-5-sm.5e5d7c47.jpeg",
-    "static/media/photo-5.jpg": "/static/media/photo-5.db0ec038.jpg",
-    "static/media/photo-6-m.jpeg": "/static/media/photo-6-m.7000757b.jpeg",
-    "static/media/photo-6-sm.jpeg": "/static/media/photo-6-sm.95aae841.jpeg",
-    "static/media/photo-6.jpg": "/static/media/photo-6.5344a466.jpg",
-    "static/media/photo-7-m.jpeg": "/static/media/photo-7-m.986a2674.jpeg",
-    "static/media/photo-7-sm.jpeg": "/static/media/photo-7-sm.aa387b89.jpeg",
-    "static/media/photo-7.jpg": "/static/media/photo-7.a4111234.jpg",
-    "static/media/photo-8-m.jpeg": "/static/media/photo-8-m.18fe4445.jpeg",
-    "static/media/photo-8-sm.jpeg": "/static/media/photo-8-sm.674c18d4.jpeg",
-    "static/media/photo-8.jpg": "/static/media/photo-8.1391e21a.jpg",
     "static/media/photo-9-m.jpeg": "/static/media/photo-9-m.08b9a1d2.jpeg",
     "static/media/photo-9-sm.jpeg": "/static/media/photo-9-sm.352df6ed.jpeg",
     "static/media/photo-9.jpg": "/static/media/photo-9.86c9dd99.jpg",
@@ -74,6 +62,7 @@
     "static/media/ribbons.svg": "/static/media/ribbons.038af5c4.svg",
     "static/media/sea_2_sm.JPG": "/static/media/sea_2_sm.4c6882ad.JPG",
     "static/media/title-dresscode.png": "/static/media/title-dresscode.16a55a52.png",
+    "static/media/title-form.png": "/static/media/title-form.745fa8b5.png",
     "static/media/title-how-to-come.png": "/static/media/title-how-to-come.75b036b4.png",
     "static/media/title-look.png": "/static/media/title-look.1a4112e4.png",
     "static/media/title-party-time.png": "/static/media/title-party-time.66203f11.png"
@@ -81,8 +70,8 @@
   "entrypoints": [
     "static/js/runtime-main.351e9c47.js",
     "static/css/2.d470d2ea.chunk.css",
-    "static/js/2.bf0196b1.chunk.js",
+    "static/js/2.97a0d300.chunk.js",
     "static/css/main.ac5fe29d.chunk.css",
-    "static/js/main.51033a86.chunk.js"
+    "static/js/main.c4a274d4.chunk.js"
   ]
 }
